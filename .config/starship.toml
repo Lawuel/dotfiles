@@ -1,0 +1,16 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+format = '''
+$directory
+[ ╰](#f5edb5)
+'''
+
+[directory]
+style = "bg:#f5edb5 fg:#17121a bold"
+format = "[](fg:#f5edb5)[$path](bg:#f5edb5 fg:#17121a bold)[](fg:#f5edb5)"
+
+
+[package]
+disabled = true

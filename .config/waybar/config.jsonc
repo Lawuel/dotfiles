@@ -1,0 +1,104 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 10,
+  "modules-left": ["group/power", "cpu", "memory", "temperature"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["wireplumber", "bluetooth", "network", "clock"],
+
+  /*   ********************************************   */
+  /*   ****************MODULES-LEFT****************   */
+  /*   ********************************************   */
+
+  "group/power": {
+    "orientation": "horizontal",
+    "modules": ["custom/showPowerOptions", "group/powerOptions"],
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": true
+    }
+  },
+
+  "custom/showPowerOptions": {
+    "format": "POWER",
+    "tooltip": false
+  },
+
+  "group/powerOptions": {
+    "orientation": "vertical",
+    "modules": ["custom/reboot", "custom/shutdown"],
+    "tooltip": false
+  },
+
+  "custom/reboot": {
+    "format": "REBOOT",
+    "on-click": "reboot",
+    "tooltip": false
+  },
+
+  "custom/shutdown": {
+    "format": "SHUTDOWN",
+    "on-click": "poweroff",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": "CPU:{usage}%"
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "MEM:{}%"
+  },
+
+  "temperature": {
+    "interval": 5,
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
+    "format": "TEMP:{temperatureC}°C",
+    "tooltip": false
+  },
+
+  /*   **********************************************   */
+  /*   ****************MODULES-CENTER****************   */
+  /*   **********************************************   */
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "{ ! }",
+      "active": "{ / }",
+      "default": "{...}"
+    }
+  },
+
+  /*   *********************************************   */
+  /*   ****************MODULES-RIGHT****************   */
+  /*   *********************************************   */
+
+  "bluetooth": {
+    "controller": "blueman",
+    "on-click": "blueman-manager",
+    "format": "BT",
+    "tooltip-format": "{device_alias} {device_battery_percentage}%"
+  },
+
+  "clock": {
+    "format": "{:%I:%M}",
+    "tooltip-format": "{:%a %b %d, %Y}"
+  },
+
+  "network": {
+    "on-click": "nm-connection-editor",
+    "format": "WIFI",
+    "tooltip-format": "{essid} {signalStrength}%"
+  },
+
+  "wireplumber": {
+    "on-click": "pavucontrol",
+    "format": "VOL:{volume}%"
+  }
+}
