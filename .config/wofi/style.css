@@ -9,7 +9,7 @@
 
 window {
   border-color: #f5edb5;
-  background-color: #110e14;
+  background-color: #17121a;
 }
 
 #input {
@@ -18,5 +18,5 @@ window {
 
 #entry:selected {
   border-color: #f5edb5;
-  background-color: #17121a;
+  background-color: #110e14;
 }
