@@ -3,13 +3,19 @@
 add_newline = true
 
 format = '''
-$directory
-[ ╰](#f5edb5)
+[╔𜲀](#ff5b5b)$username
+[╠𜲀 ](#ff5b5b)$directory
+[╚═𜲂](#ff5b5b)
 '''
 
+[username]
+show_always = true
+style_user = "fg:#16fc5b bold"
+style_root = "fg:#16fc5b bold"
+format = '[ $user ]($style)'
+
 [directory]
-style = "bg:#f5edb5 fg:#17121a bold"
-format = "[](fg:#f5edb5)[$path](bg:#f5edb5 fg:#17121a bold)[](fg:#f5edb5)"
+style = "fg:#16fc5b bold"
 
 
 [package]
