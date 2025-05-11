@@ -1,10 +1,23 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 10,
-  "modules-left": ["group/power", "cpu", "memory", "temperature"],
+  "modules-left": ["group/leftModules"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["wireplumber", "bluetooth", "network", "clock"],
+  "modules-right": ["group/rightModules"],
+
+  /*   **********************************************   */
+  /*   ****************MODULES-MAIN-GROUPS****************   */
+  /*   **********************************************   */
+
+  "group/leftModules": {
+    "orientation": "horizontal",
+    "modules": ["group/power", "cpu", "memory", "temperature"]
+  },
+
+  "group/rightModules": {
+    "orientation": "horizontal",
+    "modules": ["wireplumber", "bluetooth", "network", "clock"]
+  },
 
   /*   ********************************************   */
   /*   ****************MODULES-LEFT****************   */
@@ -79,16 +92,16 @@
   /*   ****************MODULES-RIGHT****************   */
   /*   *********************************************   */
 
+  "wireplumber": {
+    "on-click": "pavucontrol",
+    "format": "VOL:{volume}%"
+  },
+
   "bluetooth": {
     "controller": "blueman",
     "on-click": "blueman-manager",
     "format": "BT",
     "tooltip-format": "{device_alias} {device_battery_percentage}%"
-  },
-
-  "clock": {
-    "format": "{:%I:%M}",
-    "tooltip-format": "{:%a %b %d, %Y}"
   },
 
   "network": {
@@ -97,8 +110,8 @@
     "tooltip-format": "{essid} {signalStrength}%"
   },
 
-  "wireplumber": {
-    "on-click": "pavucontrol",
-    "format": "VOL:{volume}%"
+  "clock": {
+    "format": "{:%I:%M}",
+    "tooltip-format": "{:%a %b %d, %Y}"
   }
 }
