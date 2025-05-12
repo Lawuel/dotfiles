@@ -11,7 +11,7 @@
 
   "group/leftModules": {
     "orientation": "horizontal",
-    "modules": ["group/power", "cpu", "memory", "temperature"]
+    "modules": ["group/power", "cpu", "memory"]
   },
 
   "group/rightModules": {
@@ -68,13 +68,6 @@
   "memory": {
     "interval": 5,
     "format": "MEM:{}%"
-  },
-
-  "temperature": {
-    "interval": 5,
-    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input",
-    "format": "TEMP:{temperatureC}°C",
-    "tooltip": false
   },
 
   /*   **********************************************   */

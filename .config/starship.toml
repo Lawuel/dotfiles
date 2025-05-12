@@ -3,18 +3,18 @@
 add_newline = true
 
 format = '''
-[╭─🮤](#ff5b5b)$username[🮥─🮤 ](#ff5b5b)$directory[🮥](#ff5b5b)
-[╰───𜰚 ](#ff5b5b)
+[╭─🮤$username🮥─🮤 $directory🮥](#f5edb5)
+[╰───𜰚 ](#f5edb5)
 '''
 
 [username]
 show_always = true
-style_user = "fg:#4dbfa1 bold"
-style_root = "fg:#4dbfa1 bold"
+style_user = "fg:#ff5b5b bold"
+style_root = "fg:#ff5b5b bold"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:#4dbfa1 bold"
+style = "fg:#ff5b5b bold"
 
 
 [package]
