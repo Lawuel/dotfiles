@@ -5,9 +5,9 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["group/rightModules"],
 
-  /*   **********************************************   */
+  /*   ***************************************************   */
   /*   ****************MODULES-MAIN-GROUPS****************   */
-  /*   **********************************************   */
+  /*   ***************************************************   */
 
   "group/leftModules": {
     "orientation": "horizontal",
@@ -44,7 +44,7 @@
 
   "custom/sleep": {
     "format": "SLEEP",
-    "on-click": "suspend",
+    "on-click": "systemctl suspend",
     "tooltip": false
   },
 
