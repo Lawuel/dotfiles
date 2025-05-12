@@ -25,7 +25,12 @@
 
   "group/power": {
     "orientation": "horizontal",
-    "modules": ["custom/showPowerOptions", "group/powerOptions"],
+    "modules": [
+      "custom/showPowerOptions",
+      "custom/sleep",
+      "custom/reboot",
+      "custom/shutdown"
+    ],
     "drawer": {
       "click-to-reveal": true,
       "transition-left-to-right": true
@@ -37,9 +42,9 @@
     "tooltip": false
   },
 
-  "group/powerOptions": {
-    "orientation": "vertical",
-    "modules": ["custom/reboot", "custom/shutdown"],
+  "custom/sleep": {
+    "format": "SLEEP",
+    "on-click": "suspend",
     "tooltip": false
   },
 
