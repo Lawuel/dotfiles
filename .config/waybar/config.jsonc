@@ -11,7 +11,7 @@
 
   "group/leftModules": {
     "orientation": "horizontal",
-    "modules": ["group/power", "cpu", "memory"]
+    "modules": ["group/power", "cpu", "memory", "custom/uptime"]
   },
 
   "group/rightModules": {
@@ -68,6 +68,13 @@
   "memory": {
     "interval": 5,
     "format": "MEM:{}%"
+  },
+
+  "custom/uptime": {
+    "exec": "~/dotfiles/.config/waybar/scripts/uptime.sh",
+    "interval": 10,
+    "format": "{}",
+    "tooltip": false
   },
 
   /*   **********************************************   */

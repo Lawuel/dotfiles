@@ -45,6 +45,7 @@ tooltip {
 #custom-shutdown,
 #cpu,
 #memory,
+#custom-uptime,
 #workspaces button,
 #wireplumber,
 #bluetooth,
@@ -65,6 +66,7 @@ tooltip {
 #custom-shutdown:hover,
 #cpu:hover,
 #memory:hover,
+#custom-uptime:hover,
 #workspaces button:hover,
 #wireplumber:hover,
 #bluetooth:hover,
@@ -83,7 +85,8 @@ tooltip {
 #custom-reboot,
 #custom-shutdown,
 #cpu,
-#memory {
+#memory,
+#custom-uptim {
   margin-left: 2px;
 }
 
@@ -92,7 +95,8 @@ tooltip {
 #custom-reboot:hover,
 #custom-shutdown:hover,
 #cpu:hover,
-#memory:hover {
+#memory:hover,
+#custom-uptime:hover {
   color: #ff5b5b;
 }
 
