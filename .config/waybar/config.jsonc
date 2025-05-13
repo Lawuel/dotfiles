@@ -11,12 +11,12 @@
 
   "group/leftModules": {
     "orientation": "horizontal",
-    "modules": ["group/power", "cpu", "memory", "custom/uptime"]
+    "modules": ["group/power", "cpu", "memory"]
   },
 
   "group/rightModules": {
     "orientation": "horizontal",
-    "modules": ["wireplumber", "bluetooth", "network", "clock"]
+    "modules": ["wireplumber", "bluetooth", "network", "custom/uptime", "clock"]
   },
 
   /*   ********************************************   */
@@ -61,20 +61,13 @@
   },
 
   "cpu": {
-    "interval": 5,
+    "interval": 20,
     "format": "CPU:{usage}%"
   },
 
   "memory": {
-    "interval": 5,
-    "format": "MEM:{}%"
-  },
-
-  "custom/uptime": {
-    "exec": "~/dotfiles/.config/waybar/scripts/uptime.sh",
-    "interval": 60,
-    "format": "{}",
-    "tooltip": false
+    "interval": 20,
+    "format": "RAM:{}%"
   },
 
   /*   **********************************************   */
@@ -87,8 +80,8 @@
     "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
-      "urgent": "{ ! }",
-      "active": "{ / }",
+      "urgent": "{¡!¡}",
+      "active": "{\\|/}",
       "default": "{...}"
     }
   },
@@ -113,6 +106,13 @@
     "on-click": "nm-connection-editor",
     "format": "WIFI",
     "tooltip-format": "{essid} {signalStrength}%"
+  },
+
+  "custom/uptime": {
+    "exec": "~/dotfiles/.config/waybar/scripts/uptime.sh",
+    "interval": 60,
+    "format": "{}",
+    "tooltip": false
   },
 
   "clock": {

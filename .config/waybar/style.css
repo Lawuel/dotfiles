@@ -16,8 +16,7 @@ window#waybar {
   background-color: transparent;
 }
 
-#workspaces button,
-#workspaces button:hover {
+#workspaces button {
   box-shadow: inherit;
   text-shadow: inherit;
 }
@@ -68,6 +67,7 @@ tooltip {
 #memory:hover,
 #custom-uptime:hover,
 #workspaces button:hover,
+#workspaces button.active,
 #wireplumber:hover,
 #bluetooth:hover,
 #network:hover,
@@ -85,8 +85,7 @@ tooltip {
 #custom-reboot,
 #custom-shutdown,
 #cpu,
-#memory,
-#custom-uptim {
+#memory {
   margin-left: 2px;
 }
 
@@ -95,8 +94,7 @@ tooltip {
 #custom-reboot:hover,
 #custom-shutdown:hover,
 #cpu:hover,
-#memory:hover,
-#custom-uptime:hover {
+#memory:hover {
   color: #ff5b5b;
 }
 
@@ -107,6 +105,10 @@ tooltip {
 #workspaces button {
   margin-left: 1px;
   margin-right: 1px;
+}
+
+#workspaces button.active {
+  color: #f5edb5;
 }
 
 #workspaces button:hover {
@@ -120,6 +122,7 @@ tooltip {
 #wireplumber,
 #bluetooth,
 #network,
+#custom-uptime,
 #clock {
   margin-right: 2px;
 }
@@ -127,6 +130,7 @@ tooltip {
 #wireplumber:hover,
 #bluetooth:hover,
 #network:hover,
+#custom-uptime:hover,
 #clock:hover {
   color: #60a7ff;
 }
