@@ -72,7 +72,7 @@
 
   "custom/uptime": {
     "exec": "~/dotfiles/.config/waybar/scripts/uptime.sh",
-    "interval": 10,
+    "interval": 60,
     "format": "{}",
     "tooltip": false
   },
