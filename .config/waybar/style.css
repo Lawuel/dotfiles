@@ -51,7 +51,7 @@ tooltip {
 #network,
 #clock {
   transition: 250ms;
-  color: #b8b288;
+  color: #f5edb5;
   background-color: #110e14;
   border: 1px solid #b8b288;
   border-radius: 4px;
@@ -105,6 +105,11 @@ tooltip {
 #workspaces button {
   margin-left: 1px;
   margin-right: 1px;
+  color: #b8b288;
+}
+
+#workspaces button.default {
+  color: #b8b288;
 }
 
 #workspaces button.active {
