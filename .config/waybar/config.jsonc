@@ -81,7 +81,7 @@
     "format": "{icon}",
     "format-icons": {
       "urgent": "{¡!¡}",
-      "active": "{\\|/}",
+      "active": "{|||}",
       "default": "{...}"
     }
   },
