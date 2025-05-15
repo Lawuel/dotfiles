@@ -25,7 +25,6 @@ window#waybar {
 .disconnected,
 .off,
 .muted {
-  color: #b8b288;
   text-decoration: line-through;
 }
 
