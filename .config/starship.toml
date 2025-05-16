@@ -1,20 +1,18 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = true
-
 format = '''
-[╭─🮤$username🮥─🮤 $directory🮥](#f5edb5)
-[╰───𜰚 ](#f5edb5)
+[╔╡$username╞╡$directory](#f5edb5)
+[╚ ](#f5edb5)
 '''
 
 [username]
 show_always = true
-style_user = "fg:#ff5b5b bold"
-style_root = "fg:#ff5b5b bold"
+style_user = "fg:#17121a bold bg:#f5edb5"
+style_root = "fg:#17121a bold"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:#ff5b5b bold"
+style = "fg:#f5edb5 bold"
 
 
 [package]
