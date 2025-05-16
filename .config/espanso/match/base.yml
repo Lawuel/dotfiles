@@ -107,7 +107,7 @@ matches:
   - trigger: ";wl"
     replace: "ʟ"
 
-  - trigger: "wg"
+  - trigger: ";wg"
     replace: "ɢ"
 
   - trigger: ";wn"
