@@ -1,12 +1,53 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small", // Logo type: auto, builtin, small, file, etc.
+    "source": "arch", // Built-in logo name or file path
+    "width": 65,
+    "height": 35,
+    "padding": {
+      "top": 2,
+      "left": 1,
+      "right": 2
+    },
+    "color": {
+      // Override logo colors
+      "1": "#67FFD6",
+      "2": "#67FFD6"
+    }
+  },
+
+  "display": {
+    "separator": ":", // Separator between keys and values
+    "color": {
+      "keys": "#67FFD6",
+      "title": "#67FFD6"
+    },
+    "key": {
+      "width": 22, // Aligns keys to this width
+      "type": "string" // string, icon, both, or none
+    },
+    "bar": {
+      "width": 32, // Width of percentage bars
+      "charElapsed": "|", // Character for elapsed portion
+      "charTotal": "-" // Character for total portion
+    },
+    "percent": {
+      "type": 9, // 1=number, 2=bar, 3=both, 9=colored number
+      "color": {
+        "green": "#16FC5B",
+        "yellow": "#F5EDB5",
+        "red": "#FF5B5B"
+      }
+    }
+  },
+
   "modules": [
     "title",
     "separator",
     "os",
     "host",
     "kernel",
-    "uptime",
     "packages",
     "shell",
     "display",
@@ -24,9 +65,6 @@
     "memory",
     "swap",
     "disk",
-    "localip",
-    "battery",
-    "poweradapter",
     "locale",
     "break",
     "colors"
