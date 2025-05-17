@@ -7,8 +7,8 @@ format = '''
 
 [username]
 show_always = true
-style_user = "fg:#17121a bold bg:#f5edb5"
-style_root = "fg:#17121a bold"
+style_user = "fg:#f5edb5 bold bg:#f5edb5"
+style_root = "fg:#f5edb5 bold bg:#f5edb5"
 format = '[ $user ]($style)'
 
 [directory]
