@@ -80,7 +80,7 @@ matches:
   - trigger: ";l'"
     replace: "ɭ"
 
-  - trigger: ";c"
+  - trigger: ";gy"
     replace: "ɟ"
 
   - trigger: ";nj"
