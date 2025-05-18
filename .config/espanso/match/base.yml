@@ -17,11 +17,17 @@ matches:
   - trigger: ";NY"
     replace: "Ñ"
 
-  - trigger: ";br"
+  - trigger: ";btrill"
     replace: "ʙ"
 
-  - trigger: ";phi"
+  - trigger: ";phi1"
     replace: "ɸ"
+
+  - trigger: ";phi2"
+    replace: "φ"
+
+  - trigger: ";PHI"
+    replace: "Φ"
 
   - trigger: ";beta"
     replace: "β"
@@ -35,10 +41,13 @@ matches:
   - trigger: ";vw"
     replace: "ʋ"
 
-  - trigger: ";th"
+  - trigger: ";theta"
     replace: "θ"
 
-  - trigger: ";dh"
+  - trigger: ";thorn"
+    replace: "þ"
+
+  - trigger: ";edh"
     replace: "ð"
 
   - trigger: ";rtap"
@@ -98,8 +107,14 @@ matches:
   - trigger: ";ng"
     replace: "ŋ"
 
-  - trigger: ";gh"
+  - trigger: ";gamma1"
     replace: "ɣ"
+
+  - trigger: ";gamma2"
+    replace: "γ"
+
+  - trigger: ";GAMMA"
+    replace: "Γ"
 
   - trigger: ";uu"
     replace: "ɰ"
