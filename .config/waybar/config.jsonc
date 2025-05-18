@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "position": "left",
+  "position": "top",
   "modules-left": ["group/leftModules"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["group/rightModules"],
@@ -10,12 +10,12 @@
   /*   ***************************************************   */
 
   "group/leftModules": {
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "modules": ["group/power", "cpu", "memory"]
   },
 
   "group/rightModules": {
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "modules": ["wireplumber", "bluetooth", "network", "custom/uptime", "clock"]
   },
 
@@ -24,7 +24,7 @@
   /*   ********************************************   */
 
   "group/power": {
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "modules": [
       "custom/showPowerOptions",
       "custom/sleep",
