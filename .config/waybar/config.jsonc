@@ -49,25 +49,25 @@
   },
 
   "custom/reboot": {
-    "format": "REBOOT",
+    "format": "RESET",
     "on-click": "reboot",
     "tooltip": false
   },
 
   "custom/shutdown": {
-    "format": "SHUTDOWN",
+    "format": "CLOSE",
     "on-click": "poweroff",
     "tooltip": false
   },
 
   "cpu": {
     "interval": 20,
-    "format": "CPU:{usage}%"
+    "format": "C:{usage}%"
   },
 
   "memory": {
     "interval": 20,
-    "format": "RAM:{}%"
+    "format": "M:{}%"
   },
 
   /*   **********************************************   */
@@ -78,9 +78,9 @@
     "all-outputs": true,
     "format": "{icon}",
     "format-icons": {
-      "urgent": "{!}",
-      "active": "{|}",
-      "default": "{.}"
+      "urgent": "{¡!¡}",
+      "active": "{:|:}",
+      "default": "{...}"
     }
   },
 
@@ -90,19 +90,22 @@
 
   "wireplumber": {
     "on-click": "pavucontrol",
-    "format": "VOL:{volume}%"
+    "format": "VL:{volume}%",
+    "format-muted": "MUTED"
   },
 
   "bluetooth": {
     "controller": "blueman",
     "on-click": "blueman-manager",
-    "format": "BT",
+    "format": "BT:ON",
+    "format-disconnected": "BT:NO",
     "tooltip-format": "{device_alias} {device_battery_percentage}%"
   },
 
   "network": {
     "on-click": "nm-connection-editor",
-    "format": "WIFI",
+    "format": "NW:ON",
+    "format-disabled": "NW:NO",
     "tooltip-format": "{essid} {signalStrength}%"
   },
 
