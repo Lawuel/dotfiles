@@ -122,10 +122,10 @@ matches:
   - trigger: ";chir"
     replace: "ʁ"
 
-  - trigger: ";hh"
+  - trigger: ";hs"
     replace: "ħ"
 
-  - trigger: ";hhh"
+  - trigger: ";hz"
     replace: "ʕ"
 
   - trigger: ";."
