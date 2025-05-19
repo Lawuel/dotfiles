@@ -137,6 +137,44 @@ matches:
   - trigger: ";OMEGA"
     replace: "Ω"
 
+  # kanji numbers
+
+  - trigger: "`~zero"
+    replace: "零"
+
+  - trigger: "`~ichi"
+    replace: "一"
+
+  - trigger: "`~ni"
+    replace: "二"
+
+  - trigger: "`~yon"
+    replace: "四"
+
+  - trigger: "`~go"
+    replace: "五"
+
+  - trigger: "`~roku"
+    replace: "六"
+
+  - trigger: "`~nana"
+    replace: "七"
+
+  - trigger: "`~hachi"
+    replace: "八"
+
+  - trigger: "`~kyu"
+    replace: "九"
+
+  - trigger: "`~juu"
+    replace: "十"
+
+  - trigger: "`~hyaku"
+    replace: "百"
+
+  - trigger: "`~sen"
+    replace: "千"
+
   # hiragana
 
   - trigger: "`a"
@@ -149,6 +187,22 @@ matches:
     replace: "え"
   - trigger: "`o"
     replace: "お"
+
+  - trigger: "`Sa"
+    replace: "ぁ"
+  - trigger: "`Si"
+    replace: "ぃ"
+  - trigger: "`Su"
+    replace: "ぅ"
+  - trigger: "`Se"
+    replace: "ぇ"
+  - trigger: "`So"
+    replace: "ぉ"
+
+  - trigger: "`V2"
+    replace: "ー"
+  - trigger: "`C2"
+    replace: "っ"
 
   - trigger: "`ka"
     replace: "か"
@@ -263,6 +317,13 @@ matches:
   - trigger: "`no"
     replace: "の"
 
+  - trigger: "`nya"
+    replace: "にゃ"
+  - trigger: "`nyu"
+    replace: "にゅ"
+  - trigger: "`nyo"
+    replace: "にょ"
+
   - trigger: "`ha"
     replace: "は"
   - trigger: "`hi"
@@ -294,6 +355,25 @@ matches:
   - trigger: "`po"
     replace: "ぽ"
 
+  - trigger: "`hya"
+    replace: "ひゃ"
+  - trigger: "`hyu"
+    replace: "ひゅ"
+  - trigger: "`hyo"
+    replace: "ひょ"
+  - trigger: "`bya"
+    replace: "びゃ"
+  - trigger: "`byu"
+    replace: "びゅ"
+  - trigger: "`byo"
+    replace: "びょ"
+  - trigger: "`pya"
+    replace: "ぴゃ"
+  - trigger: "`pyu"
+    replace: "ぴゅ"
+  - trigger: "`pyo"
+    replace: "ぴょ"
+
   - trigger: "`ma"
     replace: "ま"
   - trigger: "`mi"
@@ -305,16 +385,26 @@ matches:
   - trigger: "`mo"
     replace: "も"
 
+  - trigger: "`mya"
+    replace: "みゃ"
+  - trigger: "`myu"
+    replace: "みゅ"
+  - trigger: "`myo"
+    replace: "みょ"
+
   - trigger: "`ya"
     replace: "や"
-  #- trigger: "`ki"
-  #  replace: "き"
   - trigger: "`yu"
     replace: "ゆ"
-  #- trigger: "`ke"
-  #  replace: "け"
   - trigger: "`yo"
     replace: "よ"
+
+  - trigger: "`Sya"
+    replace: "ゃ"
+  - trigger: "`Syu"
+    replace: "ゅ"
+  - trigger: "`Syo"
+    replace: "ょ"
 
   - trigger: "`ra"
     replace: "ら"
@@ -327,19 +417,21 @@ matches:
   - trigger: "`ro"
     replace: "ろ"
 
+  - trigger: "`rya"
+    replace: "りゃ"
+  - trigger: "`ryu"
+    replace: "りゅ"
+  - trigger: "`ryo"
+    replace: "りょ"
+
   - trigger: "`wa"
     replace: "わ"
-  #- trigger: "`wi"
-  #  replace: "き"
-  #- trigger: "`wu"
-  #  replace: "く"
-  #- trigger: "`we"
-  #  replace: "け"
   - trigger: "`wo"
     replace: "を"
 
   - trigger: "`N"
     replace: "ん"
+
   # international phonetic alphabet
 
   - trigger: ";btrill"
