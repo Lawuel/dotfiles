@@ -98,7 +98,7 @@
     "controller": "blueman",
     "on-click": "blueman-manager",
     "format": "BT:ON",
-    "format-disconnected": "BT:NO",
+    "format-disabled": "BT:NO",
     "tooltip-format": "{device_alias} {device_battery_percentage}%"
   },
 
