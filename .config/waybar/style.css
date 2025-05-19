@@ -40,7 +40,7 @@ window#waybar {
 #clock {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
   background-color: #110e14;
-  padding: 0 4px 0 4px;
+  padding: 0 6px 0 6px;
   border-style: solid;
   margin: 2px 0 2px 0;
   transition: 250ms;
