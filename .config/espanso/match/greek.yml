@@ -1,0 +1,97 @@
+matches:
+  - trigger: ";alpha"
+    replace: "α"
+
+  - trigger: ";beta"
+    replace: "β"
+
+  - trigger: ";gamma1"
+    replace: "ɣ"
+  - trigger: ";gamma2"
+    replace: "γ"
+  - trigger: ";GAMMA"
+    replace: "Γ"
+
+  - trigger: ";delta"
+    replace: "δ"
+  - trigger: ";DELTA"
+    replace: "Δ"
+
+  - trigger: ";epsilon"
+    replace: "ε"
+
+  - trigger: ";zeta"
+    replace: "ζ"
+
+  - trigger: ";eta"
+    replace: "η"
+
+  - trigger: ";theta"
+    replace: "θ"
+  - trigger: ";THETA"
+    replace: "Θ"
+
+  - trigger: ";iota"
+    replace: "ι"
+
+  - trigger: ";kappa"
+    replace: "κ"
+
+  - trigger: ";lamda"
+    replace: "λ"
+  - trigger: ";LAMDA"
+    replace: "Λ"
+
+  - trigger: ";mu"
+    replace: "μ"
+
+  - trigger: ";nu"
+    replace: "ν"
+
+  - trigger: ";xi"
+    replace: "ξ"
+  - trigger: ";XI"
+    replace: "Ξ"
+
+  - trigger: ";pi"
+    replace: "π"
+  - trigger: ";PI"
+    replace: "Π"
+
+  - trigger: ";rho"
+    replace: "ρ"
+
+  - trigger: ";sigma1"
+    replace: "σ"
+  - trigger: ";sigma2"
+    replace: "ς"
+  - trigger: ";SIGMA"
+    replace: "Σ"
+
+  - trigger: ";tau"
+    replace: "τ"
+
+  - trigger: ";upsilon"
+    replace: "υ"
+  - trigger: ";UPSILON"
+    replace: "Υ"
+
+  - trigger: ";phi1"
+    replace: "ɸ"
+  - trigger: ";phi2"
+    replace: "φ"
+  - trigger: ";PHI"
+    replace: "Φ"
+
+  - trigger: ";chi"
+    replace: "χ"
+
+  - trigger: ";psi"
+    replace: "ψ"
+  - trigger: ";PSI"
+    replace: "Ψ"
+
+  - trigger: ";omega"
+    replace: "ω"
+  - trigger: ";OMEGA"
+    replace: "Ω"
