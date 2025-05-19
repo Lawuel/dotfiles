@@ -74,7 +74,7 @@ window#waybar {
 #custom-shutdown,
 #cpu,
 #memory {
-  margin-right: 4px;
+  margin-left: 8px;
 }
 
 /*   ****************************************************   */
@@ -82,8 +82,8 @@ window#waybar {
 /*   ****************************************************   */
 
 #workspaces button {
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: 4px;
+  margin-left: 4px;
   color: #b8b288;
 }
 
@@ -100,7 +100,7 @@ window#waybar {
 #network,
 #custom-uptime,
 #clock {
-  margin-left: 4px;
+  margin-right: 8px;
 }
 
 /*   *********************************************   */
