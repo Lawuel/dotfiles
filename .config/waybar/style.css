@@ -42,7 +42,7 @@ window#waybar {
   background-color: #110e14;
   padding: 0 6px 0 6px;
   border-style: solid;
-  margin: 2px 0 2px 0;
+  margin: 4px 0 4px 0;
   transition: 250ms;
   border-width: 1px;
   color: #f5edb5;
@@ -74,7 +74,7 @@ window#waybar {
 #custom-shutdown,
 #cpu,
 #memory {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 /*   ****************************************************   */
@@ -82,8 +82,8 @@ window#waybar {
 /*   ****************************************************   */
 
 #workspaces button {
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
   color: #b8b288;
 }
 
@@ -100,7 +100,7 @@ window#waybar {
 #network,
 #custom-uptime,
 #clock {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 /*   *********************************************   */
