@@ -4,9 +4,9 @@
 
 * {
   font-family: "DejaVu Sans Mono";
-  border-radius: 0px;
+  border-radius: 6px;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /*   *********************************************   */
@@ -14,7 +14,7 @@
 /*   *********************************************   */
 
 window#waybar {
-  background-color: rgba(23, 18, 26, 0.75);
+  background-color: transparent;
 }
 
 #workspaces button {
@@ -40,7 +40,7 @@ window#waybar {
 #clock {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
   background-color: #110e14;
-  padding: 0 8px 0 8px;
+  padding: 0 4px 0 4px;
   border-style: solid;
   margin: 2px 0 2px 0;
   transition: 250ms;
@@ -74,7 +74,7 @@ window#waybar {
 #custom-shutdown,
 #cpu,
 #memory {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 /*   ****************************************************   */
@@ -82,8 +82,8 @@ window#waybar {
 /*   ****************************************************   */
 
 #workspaces button {
-  margin-right: 1px;
-  margin-left: 1px;
+  margin-right: 2px;
+  margin-left: 2px;
   color: #b8b288;
 }
 
@@ -100,7 +100,7 @@ window#waybar {
 #network,
 #custom-uptime,
 #clock {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 
 /*   *********************************************   */
@@ -109,5 +109,6 @@ window#waybar {
 
 tooltip {
   border-color: #ff5b5b #f5edb5 #f5edb5 #ff5b5b;
+  background-color: #110e14;
   color: #ff5b5b;
 }
