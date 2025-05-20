@@ -1,17 +1,17 @@
-/*   **************************************   */
-/*   ****************GLOBAL****************   */
-/*   **************************************   */
+/* ====================================== */
+/* ============== GLOBAL =============== */
+/* ====================================== */
 
 * {
   font-family: "DejaVu Sans Mono", "Noto Sans Tagalog";
-  border-radius: 6px;
-  font-weight: bold;
   font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
 }
 
-/*   *********************************************   */
-/*   ****************MISCELLANEOUS****************   */
-/*   *********************************************   */
+/* ============================================= */
+/* ============= MISCELLANEOUS ================ */
+/* ============================================= */
 
 window#waybar {
   background-color: transparent;
@@ -22,9 +22,9 @@ window#waybar {
   box-shadow: inherit;
 }
 
-/*   *****************************************************   */
-/*   ****************MODULES-STYLE-DEFAULT****************   */
-/*   *****************************************************   */
+/* ===================================================== */
+/* =========== MODULES - STYLE DEFAULT ================ */
+/* ===================================================== */
 
 #custom-showPowerOptions,
 #custom-sleep,
@@ -32,20 +32,19 @@ window#waybar {
 #custom-shutdown,
 #cpu,
 #memory,
+#tray,
 #custom-uptime,
 #workspaces button,
 #wireplumber,
 #bluetooth,
 #network,
 #clock {
-  border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  background-color: #110e14;
-  padding: 0 6px 0 6px;
-  border-style: solid;
-  margin: 4px 0 4px 0;
-  transition: 250ms;
-  border-width: 1px;
+  background-color: #17121a;
   color: #f5edb5;
+  border: 0;
+  padding: 0 6px;
+  margin: 0;
+  transition: 250ms;
 }
 
 #custom-showPowerOptions:hover,
@@ -54,36 +53,46 @@ window#waybar {
 #custom-shutdown:hover,
 #cpu:hover,
 #memory:hover,
+#tray:hover,
 #custom-uptime:hover,
 #workspaces button:hover,
 #wireplumber:hover,
 #bluetooth:hover,
 #network:hover,
 #clock:hover {
-  border-color: #ff5b5b #f5edb5 #f5edb5 #ff5b5b;
   color: #ff5b5b;
 }
 
-/*   **************************************************   */
-/*   ****************MODULES-LEFT-STYLE****************   */
-/*   **************************************************   */
+.modules-left,
+.modules-center,
+.modules-right {
+  background-color: #17121a;
+  border: 1px solid;
+  border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
+  border-radius: 6px;
+  padding: 0 6px;
+}
+
+/* ================================================== */
+/* =========== MODULES - LEFT STYLE ================ */
+/* ================================================== */
 
 #custom-showPowerOptions,
 #custom-sleep,
 #custom-reboot,
 #custom-shutdown,
 #cpu,
-#memory {
-  margin-left: 4px;
+#memory,
+#tray {
+  margin: 0 3px;
 }
 
-/*   ****************************************************   */
-/*   ****************MODULES-CENTER-STYLE****************   */
-/*   ****************************************************   */
+/* ==================================================== */
+/* =========== MODULES - CENTER STYLE ================ */
+/* ==================================================== */
 
 #workspaces button {
-  margin-right: 2px;
-  margin-left: 2px;
+  margin: 0 3px;
   color: #b8b288;
 }
 
@@ -91,24 +100,24 @@ window#waybar {
   color: #f5edb5;
 }
 
-/*   ***************************************************   */
-/*   ****************MODULES-RIGHT-STYLE****************   */
-/*   ***************************************************   */
+/* =================================================== */
+/* =========== MODULES - RIGHT STYLE ================ */
+/* =================================================== */
 
 #wireplumber,
 #bluetooth,
 #network,
 #custom-uptime,
 #clock {
-  margin-right: 4px;
+  margin: 0 3px;
 }
 
-/*   *********************************************   */
-/*   ****************MISCELLANEOUS****************   */
-/*   *********************************************   */
+/* ============================================= */
+/* ============= MISCELLANEOUS ================ */
+/* ============================================= */
 
 tooltip {
-  border-color: #ff5b5b #f5edb5 #f5edb5 #ff5b5b;
-  background-color: #110e14;
+  background-color: #17121a;
+  border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
   color: #ff5b5b;
 }

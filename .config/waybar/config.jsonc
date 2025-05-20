@@ -43,31 +43,31 @@
   },
 
   "custom/sleep": {
-    "format": "SLEEP",
+    "format": "SUSPEND",
     "on-click": "systemctl suspend",
     "tooltip": false
   },
 
   "custom/reboot": {
-    "format": "RESET",
+    "format": "REBOOT",
     "on-click": "reboot",
     "tooltip": false
   },
 
   "custom/shutdown": {
-    "format": "CLOSE",
+    "format": "SHUTDOWN",
     "on-click": "poweroff",
     "tooltip": false
   },
 
   "cpu": {
     "interval": 20,
-    "format": "C:{usage}%"
+    "format": "CPU:{usage}%"
   },
 
   "memory": {
     "interval": 20,
-    "format": "M:{}%"
+    "format": "MEM:{}%"
   },
 
   /*   **********************************************   */
@@ -90,7 +90,7 @@
 
   "wireplumber": {
     "on-click": "pavucontrol",
-    "format": "VL:{volume}%",
+    "format": "VOL:{volume}%",
     "format-muted": "MUTED"
   },
 
@@ -98,14 +98,14 @@
     "controller": "blueman",
     "on-click": "blueman-manager",
     "format": "BT:ON",
-    "format-disabled": "BT:NO",
+    "format-disabled": "BT:OFF",
     "tooltip-format": "{device_alias} {device_battery_percentage}%"
   },
 
   "network": {
     "on-click": "nm-connection-editor",
     "format": "NW:ON",
-    "format-disabled": "NW:NO",
+    "format-disabled": "NW:OFF",
     "tooltip-format": "{essid} {signalStrength}%"
   },
 
