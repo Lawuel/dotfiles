@@ -9,7 +9,7 @@
 
 window {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  background-color: rgba(23, 18, 26, 0.5);
+  background-color: rgba(23, 18, 26, 0.75);
 }
 
 #input {
@@ -18,5 +18,5 @@ window {
 
 #entry:selected {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  background-color: rgba(17, 14, 20, 0.5);
+  background-color: rgba(17, 14, 20, 0.75);
 }
