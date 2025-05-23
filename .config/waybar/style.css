@@ -1,7 +1,3 @@
-/* ====================================== */
-/* ============== GLOBAL =============== */
-/* ====================================== */
-
 * {
   font-family: 'DejaVu Sans Mono', 'Font Awesome 6 Brands',
     'Font Awesome 6 Free', 'Symbols Nerd Font Mono', 'Symbols Nerd Font';
@@ -9,10 +5,6 @@
   font-weight: bold;
   border-radius: 6px;
 }
-
-/* ============================================= */
-/* ============= MISCELLANEOUS ================ */
-/* ============================================= */
 
 window#waybar {
   background-color: rgba(23, 18, 26, 0.75);
@@ -25,24 +17,20 @@ window#waybar {
   box-shadow: inherit;
 }
 
-/* ===================================================== */
-/* =========== MODULES - STYLE DEFAULT ================ */
-/* ===================================================== */
-
 #custom-showPowerOptions,
 #custom-sleep,
 #custom-reboot,
 #custom-shutdown,
 #custom-logout,
-#cpu,
-#memory,
-#tray,
-#user,
+#bluetooth,
+#network,
+#mpris,
 #workspaces button,
 #backlight,
 #wireplumber,
-#bluetooth,
-#network,
+#cpu,
+#memory,
+#user,
 #clock {
   background-color: #17121a;
   color: #f5edb5;
@@ -57,15 +45,15 @@ window#waybar {
 #custom-reboot:hover,
 #custom-shutdown:hover,
 #custom-logout:hover,
-#cpu:hover,
-#memory:hover,
-#tray:hover,
-#user:hover,
+#bluetooth:hover,
+#network:hover,
+#mpris:hover,
 #workspaces button:hover,
 #backlight:hover,
 #wireplumber:hover,
-#bluetooth:hover,
-#network:hover,
+#cpu:hover,
+#memory:hover,
+#user:hover,
 #clock:hover {
   background-color: #ff5b5b;
   color: #17121a;
@@ -83,10 +71,6 @@ window#waybar {
   margin: 6px 6px;
 }
 
-/* ================================================== */
-/* =========== MODULES - LEFT STYLE ================ */
-/* ================================================== */
-
 #custom-showPowerOptions,
 #custom-sleep,
 #custom-reboot,
@@ -94,13 +78,9 @@ window#waybar {
 #custom-logout,
 #bluetooth,
 #network,
-#tray {
+#mpris {
   margin: 0 3px;
 }
-
-/* ==================================================== */
-/* =========== MODULES - CENTER STYLE ================ */
-/* ==================================================== */
 
 #workspaces button {
   margin: 0 3px;
@@ -111,10 +91,6 @@ window#waybar {
   color: #f5edb5;
 }
 
-/* =================================================== */
-/* =========== MODULES - RIGHT STYLE ================ */
-/* =================================================== */
-
 #backlight,
 #wireplumber,
 #cpu,
@@ -123,10 +99,6 @@ window#waybar {
 #clock {
   margin: 0 3px;
 }
-
-/* ============================================= */
-/* ============= MISCELLANEOUS ================ */
-/* ============================================= */
 
 tooltip {
   background-color: #17121a;

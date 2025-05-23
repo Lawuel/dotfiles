@@ -1,27 +1,16 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["group/leftModules"],
+  "modules-left": ["group/power", "bluetooth", "network", "mpris"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["group/rightModules"],
-
-  /* *************************************************** */
-  /* **************** MODULES-MAIN-GROUPS ************** */
-  /* *************************************************** */
-
-  "group/leftModules": {
-    "orientation": "horizontal",
-    "modules": ["group/power", "bluetooth", "network"]
-  },
-
-  "group/rightModules": {
-    "orientation": "horizontal",
-    "modules": ["backlight", "wireplumber", "cpu", "memory", "user", "clock"]
-  },
-
-  /* ******************************************** */
-  /* **************** MODULES-LEFT ************** */
-  /* ******************************************** */
+  "modules-right": [
+    "backlight",
+    "wireplumber",
+    "cpu",
+    "memory",
+    "user",
+    "clock"
+  ],
 
   "group/power": {
     "orientation": "horizontal",
@@ -85,9 +74,16 @@
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
   },
 
-  /* ********************************************** */
-  /* **************** MODULES-CENTER ************** */
-  /* ********************************************** */
+  "mpris": {
+    "dynamic-order": ["title", "artist"],
+    "format": "{dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "format-playing": "{status_icon} {dynamic}",
+    "status-icons": {
+      "paused": "󰏤",
+      "playing": "󰐊"
+    }
+  },
 
   "hyprland/workspaces": {
     "all-outputs": true,
@@ -98,10 +94,6 @@
       "default": "󰝦"
     }
   },
-
-  /* ********************************************* */
-  /* **************** MODULES-RIGHT ************** */
-  /* ********************************************* */
 
   "backlight": {
     "device": "intel_backlight",
