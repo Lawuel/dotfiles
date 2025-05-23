@@ -39,6 +39,7 @@ window#waybar {
 #tray,
 #user,
 #workspaces button,
+#backlight,
 #wireplumber,
 #bluetooth,
 #network,
@@ -61,6 +62,7 @@ window#waybar {
 #tray:hover,
 #user:hover,
 #workspaces button:hover,
+#backlight:hover,
 #wireplumber:hover,
 #bluetooth:hover,
 #network:hover,
@@ -113,6 +115,7 @@ window#waybar {
 /* =========== MODULES - RIGHT STYLE ================ */
 /* =================================================== */
 
+#backlight,
 #wireplumber,
 #cpu,
 #memory,
