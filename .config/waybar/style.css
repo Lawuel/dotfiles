@@ -68,7 +68,7 @@ window#waybar {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
   border-radius: 6px;
   padding: 0 6px;
-  margin: 6px 6px;
+  margin: 6px 6px 7px 6px;
 }
 
 #custom-showPowerOptions,
