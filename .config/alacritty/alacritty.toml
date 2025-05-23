@@ -3,7 +3,7 @@ opacity = 0.5
 
 [font]
 normal = { family = "DejaVu Sans Mono", style = "Regular" }
-size = 11
+size = 16
 
 [colors]
 cursor = { text = "#17121a", cursor = "#ff5b5b" }

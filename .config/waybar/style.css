@@ -3,7 +3,8 @@
 /* ====================================== */
 
 * {
-  font-family: "DejaVu Sans Mono", "Noto Sans Tagalog";
+  font-family: 'DejaVu Sans Mono', 'Font Awesome 6 Brands',
+    'Font Awesome 6 Free', 'Symbols Nerd Font Mono', 'Symbols Nerd Font';
   font-size: 12px;
   font-weight: bold;
   border-radius: 6px;
@@ -32,10 +33,11 @@ window#waybar {
 #custom-sleep,
 #custom-reboot,
 #custom-shutdown,
+#custom-logout,
 #cpu,
 #memory,
 #tray,
-#custom-uptime,
+#user,
 #workspaces button,
 #wireplumber,
 #bluetooth,
@@ -53,16 +55,19 @@ window#waybar {
 #custom-sleep:hover,
 #custom-reboot:hover,
 #custom-shutdown:hover,
+#custom-logout:hover,
 #cpu:hover,
 #memory:hover,
 #tray:hover,
-#custom-uptime:hover,
+#user:hover,
 #workspaces button:hover,
 #wireplumber:hover,
 #bluetooth:hover,
 #network:hover,
 #clock:hover {
-  color: #ff5b5b;
+  background-color: #ff5b5b;
+  color: #17121a;
+  border-radius: 6px 6px 0 0;
 }
 
 .modules-left,
@@ -84,8 +89,9 @@ window#waybar {
 #custom-sleep,
 #custom-reboot,
 #custom-shutdown,
-#cpu,
-#memory,
+#custom-logout,
+#bluetooth,
+#network,
 #tray {
   margin: 0 3px;
 }
@@ -108,9 +114,9 @@ window#waybar {
 /* =================================================== */
 
 #wireplumber,
-#bluetooth,
-#network,
-#custom-uptime,
+#cpu,
+#memory,
+#user,
 #clock {
   margin: 0 3px;
 }

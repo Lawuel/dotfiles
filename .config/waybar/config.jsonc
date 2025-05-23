@@ -11,12 +11,12 @@
 
   "group/leftModules": {
     "orientation": "horizontal",
-    "modules": ["group/power", "cpu", "memory"]
+    "modules": ["group/power", "bluetooth", "network"]
   },
 
   "group/rightModules": {
     "orientation": "horizontal",
-    "modules": ["wireplumber", "bluetooth", "network", "custom/uptime", "clock"]
+    "modules": ["backlight", "wireplumber", "cpu", "memory", "user", "clock"]
   },
 
   /* ******************************************** */
@@ -29,7 +29,8 @@
       "custom/showPowerOptions",
       "custom/sleep",
       "custom/reboot",
-      "custom/shutdown"
+      "custom/shutdown",
+      "custom/logout"
     ],
     "drawer": {
       "click-to-reveal": true,
@@ -38,36 +39,50 @@
   },
 
   "custom/showPowerOptions": {
-    "format": "POWER",
+    "format": "󰀄",
     "tooltip": false
   },
 
   "custom/sleep": {
-    "format": "SUSPEND",
+    "format": "󰤄",
     "on-click": "systemctl suspend",
     "tooltip": false
   },
 
   "custom/reboot": {
-    "format": "REBOOT",
+    "format": "󰜉",
     "on-click": "reboot",
     "tooltip": false
   },
 
   "custom/shutdown": {
-    "format": "SHUTDOWN",
+    "format": "󰐥",
     "on-click": "poweroff",
     "tooltip": false
   },
 
-  "cpu": {
-    "interval": 20,
-    "format": "CPU:{usage}%"
+  "custom/logout": {
+    "format": "󰍃",
+    "on-click": "hyprctl dispatch exit",
+    "tooltip": false
   },
 
-  "memory": {
-    "interval": 20,
-    "format": "MEM:{}%"
+  "bluetooth": {
+    "controller": "blueman",
+    "on-click": "blueman-manager",
+    "format": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "tooltip-format": "{device_alias} {device_battery_percentage}%"
+  },
+
+  "network": {
+    "on-click": "nm-connection-editor",
+    "format-disconnected": "󰤮",
+    "tooltip-format": "{essid} {signalStrength}%",
+    "format": "{icon}",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
   },
 
   /* ********************************************** */
@@ -78,9 +93,9 @@
     "all-outputs": true,
     "format": "{icon}",
     "format-icons": {
-      "urgent": "{¡!¡}",
-      "active": "{:|:}",
-      "default": "{...}"
+      "urgent": "󰮕",
+      "active": "󰝥",
+      "default": "󰝦"
     }
   },
 
@@ -88,32 +103,31 @@
   /* **************** MODULES-RIGHT ************** */
   /* ********************************************* */
 
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
+  },
+
   "wireplumber": {
     "on-click": "pavucontrol",
-    "format": "VOL:{volume}%",
-    "format-muted": "MUTED"
+    "format-muted": "{volume}% 󰝟",
+    "format": "{icon} {volume}%",
+    "format-icons": ["󰕿", "󰖀", "󰕾"]
   },
 
-  "bluetooth": {
-    "controller": "blueman",
-    "on-click": "blueman-manager",
-    "format": "BT:ON",
-    "format-disabled": "BT:OFF",
-    "tooltip-format": "{device_alias} {device_battery_percentage}%"
+  "cpu": {
+    "interval": 15,
+    "format": "󰙅 {usage}%"
   },
 
-  "network": {
-    "on-click": "nm-connection-editor",
-    "format": "NW:ON",
-    "format-disabled": "NW:OFF",
-    "tooltip-format": "{essid} {signalStrength}%"
+  "memory": {
+    "interval": 15,
+    "format": "󰌨 {percentage}%"
   },
 
-  "custom/uptime": {
-    "exec": "~/.config/waybar/scripts/uptime.sh",
-    "interval": 60,
-    "format": "{}",
-    "tooltip": false
+  "user": {
+    "format": "{work_H}:{work_M}"
   },
 
   "clock": {
