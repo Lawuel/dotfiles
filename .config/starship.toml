@@ -9,6 +9,5 @@ format = '''
 style = "fg:#67ffd6 bold"
 format = '[$path]($style)'
 
-
 [package]
 disabled = true
