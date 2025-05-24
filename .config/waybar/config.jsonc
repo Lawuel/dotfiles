@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["group/power", "bluetooth", "network", "mpris"],
+  "modules-left": ["group/power", "bluetooth", "network", "group/mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "backlight",
@@ -15,8 +15,8 @@
   "group/power": {
     "orientation": "horizontal",
     "modules": [
-      "custom/showPowerOptions",
-      "custom/sleep",
+      "custom/show-power-options",
+      "custom/suspend",
       "custom/reboot",
       "custom/shutdown",
       "custom/logout"
@@ -27,12 +27,12 @@
     }
   },
 
-  "custom/showPowerOptions": {
+  "custom/show-power-options": {
     "format": "󰀄",
     "tooltip": false
   },
 
-  "custom/sleep": {
+  "custom/suspend": {
     "format": "󰤄",
     "on-click": "systemctl suspend",
     "tooltip": false
@@ -72,6 +72,20 @@
     "tooltip-format": "{essid} {signalStrength}%",
     "format": "{icon}",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
+  },
+
+  "group/mpris": {
+    "orientation": "horizontal",
+    "modules": ["custom/show-mpris", "mpris"],
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": true
+    }
+  },
+
+  "custom/show-mpris": {
+    "format": "󰴙",
+    "tooltip": false
   },
 
   "mpris": {
