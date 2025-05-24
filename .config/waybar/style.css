@@ -25,7 +25,6 @@ window#waybar {
 #bluetooth,
 #network,
 #custom-show-mpris,
-#mpris,
 #workspaces button,
 #backlight,
 #wireplumber,
@@ -37,7 +36,7 @@ window#waybar {
   color: #f5edb5;
   border: 0;
   padding: 0 6px;
-  margin: 0;
+  margin: 0 3px;
   transition: 250ms;
 }
 
@@ -49,7 +48,6 @@ window#waybar {
 #bluetooth:hover,
 #network:hover,
 #custom-show-mpris:hover,
-#mpris:hover,
 #workspaces button:hover,
 #backlight:hover,
 #wireplumber:hover,
@@ -73,34 +71,12 @@ window#waybar {
   margin: 6px 6px 7px 6px;
 }
 
-#custom-show-power-options,
-#custom-suspend,
-#custom-reboot,
-#custom-shutdown,
-#custom-logout,
-#bluetooth,
-#network,
-#show-mpris,
-#mpris {
-  margin: 0 3px;
-}
-
 #workspaces button {
-  margin: 0 3px;
   color: #b8b288;
 }
 
 #workspaces button.active {
   color: #f5edb5;
-}
-
-#backlight,
-#wireplumber,
-#cpu,
-#memory,
-#user,
-#clock {
-  margin: 0 3px;
 }
 
 tooltip {
