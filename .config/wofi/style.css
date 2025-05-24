@@ -1,6 +1,6 @@
 * {
   border-radius: 6px;
-  font-family: "DejaVu Sans Mono";
+  font-family: 'DejaVu Sans Mono';
   font-size: 12px;
   border: 1px solid transparent;
   background-color: transparent;
@@ -9,7 +9,7 @@
 
 window {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  background-color: rgba(23, 18, 26, 0.75);
+  background-color: rgba(23, 18, 26, 0.5);
 }
 
 #input {
@@ -18,5 +18,5 @@ window {
 
 #entry:selected {
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  background-color: rgba(17, 14, 20, 0.75);
+  background-color: rgba(17, 14, 20, 0.5);
 }
