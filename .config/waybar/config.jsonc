@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["group/power", "bluetooth", "network", "group/mpris"],
+  "modules-left": ["group/power", "bluetooth", "network", "mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "backlight",
@@ -74,26 +74,10 @@
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
   },
 
-  "group/mpris": {
-    "orientation": "horizontal",
-    "modules": ["custom/show-mpris", "mpris"],
-    "drawer": {
-      "click-to-reveal": true,
-      "transition-left-to-right": true
-    }
-  },
-
-  "custom/show-mpris": {
-    "format": "󰴙",
-    "tooltip": false
-  },
-
   "mpris": {
-    "dynamic-separator": " | ",
-    "dynamic-order": ["artist", "title"],
-    "format": "{dynamic}",
-    "format-paused": "{status_icon} {dynamic}",
-    "format-playing": "{status_icon} {dynamic}",
+    "format": "󰴙",
+    "format-paused": "{status_icon}",
+    "format-playing": "{status_icon}",
     "status-icons": {
       "paused": "󰐊",
       "playing": "󰏤"
