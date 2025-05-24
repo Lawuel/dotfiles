@@ -75,13 +75,14 @@
   },
 
   "mpris": {
-    "dynamic-order": ["title", "artist"],
+    "dynamic-separator": " | ",
+    "dynamic-order": ["artist", "title"],
     "format": "{dynamic}",
     "format-paused": "{status_icon} {dynamic}",
     "format-playing": "{status_icon} {dynamic}",
     "status-icons": {
-      "paused": "󰏤",
-      "playing": "󰐊"
+      "paused": "󰐊",
+      "playing": "󰏤"
     }
   },
 
