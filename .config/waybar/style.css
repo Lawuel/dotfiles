@@ -67,8 +67,8 @@ window#waybar {
   border: 1px solid;
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
   border-radius: 6px;
-  padding: 0 6px;
-  margin: 6px 6px 7px 6px;
+  padding: 0 3px;
+  margin: 4px 4px 5px 4px;
 }
 
 #workspaces button {

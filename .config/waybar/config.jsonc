@@ -102,7 +102,7 @@
 
   "wireplumber": {
     "on-click": "pavucontrol",
-    "format-muted": "{volume}% 󰝟",
+    "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"]
   },
