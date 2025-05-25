@@ -8,6 +8,9 @@ matches:
   - trigger: '`~ni'
     replace: '二'
 
+  - trigger: '`~san'
+    replace: '三'
+
   - trigger: '`~yon'
     replace: '四'
 

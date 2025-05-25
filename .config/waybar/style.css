@@ -1,7 +1,7 @@
 * {
   font-family: 'DejaVu Sans Mono', 'Font Awesome 6 Brands',
     'Font Awesome 6 Free', 'Symbols Nerd Font Mono', 'Symbols Nerd Font';
-  font-size: 12px;
+  font-size: 24px;
   font-weight: bold;
   border-radius: 6px;
 }
@@ -60,6 +60,10 @@ window#waybar {
   background-color: #ff5b5b;
   color: #17121a;
   border-radius: 6px 6px 0 0;
+}
+
+#cava {
+  color: #ff5b5b;
 }
 
 .modules-left,
