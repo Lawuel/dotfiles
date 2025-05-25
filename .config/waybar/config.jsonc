@@ -4,8 +4,8 @@
   "modules-left": ["group/power", "bluetooth", "network", "mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "backlight",
     "wireplumber",
+    "backlight",
     "cpu",
     "memory",
     "user",
@@ -35,41 +35,43 @@
   "custom/suspend": {
     "format": "󰤄",
     "on-click": "systemctl suspend",
-    "tooltip": false
+    "tooltip-format": "suspend"
   },
 
   "custom/reboot": {
     "format": "󰜉",
     "on-click": "reboot",
-    "tooltip": false
+    "tooltip-format": "reboot"
   },
 
   "custom/shutdown": {
     "format": "󰐥",
     "on-click": "poweroff",
-    "tooltip": false
+    "tooltip-format": "shutdown"
   },
 
   "custom/logout": {
     "format": "󰍃",
     "on-click": "hyprctl dispatch exit",
-    "tooltip": false
+    "tooltip-format": "logout"
   },
 
   "bluetooth": {
-    "controller": "blueman",
     "on-click": "blueman-manager",
     "format": "󰂯",
     "format-off": "󰂲",
     "format-disabled": "󰂲",
     "format-connected": "󰂱",
-    "tooltip-format": "{device_alias} {device_battery_percentage}%"
+    "tooltip-format": "bluetooth",
+    "tooltip-format-off": "off",
+    "tooltip-format-disabled": "disabled",
+    "tooltip-format-connected": "{device_alias}"
   },
 
   "network": {
     "on-click": "nm-connection-editor",
     "format-disconnected": "󰤮",
-    "tooltip-format": "{essid} {signalStrength}%",
+    "tooltip-format": "{essid}",
     "format": "{icon}",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
   },
@@ -81,7 +83,8 @@
     "status-icons": {
       "paused": "󰐊",
       "playing": "󰏤"
-    }
+    },
+    "tooltip-format": "{artist} | {title}"
   },
 
   "hyprland/workspaces": {
@@ -93,18 +96,18 @@
       "default": "󰝦"
     }
   },
-
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon} {percent}%",
-    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
-  },
-
   "wireplumber": {
     "on-click": "pavucontrol",
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"]
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "tooltip": false,
+    "format": "{icon} {percent}%",
+    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
   },
 
   "cpu": {

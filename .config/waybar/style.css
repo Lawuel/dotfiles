@@ -71,14 +71,6 @@ window#waybar {
   margin: 4px 4px 5px 4px;
 }
 
-#workspaces button {
-  color: #b8b288;
-}
-
-#workspaces button.active {
-  color: #f5edb5;
-}
-
 tooltip {
   background-color: #17121a;
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
