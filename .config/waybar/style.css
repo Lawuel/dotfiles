@@ -3,13 +3,11 @@
     'Font Awesome 6 Free', 'Symbols Nerd Font Mono', 'Symbols Nerd Font';
   font-size: 12px;
   font-weight: bold;
-  border-radius: 6px;
 }
 
 window#waybar {
   background-color: rgba(23, 18, 26, 0.5);
   border-bottom: 1px solid #ff5b5b;
-  border-radius: 0;
 }
 
 #workspaces button {
@@ -36,8 +34,8 @@ window#waybar {
   background-color: #17121a;
   color: #f5edb5;
   border: 0;
-  padding: 0 6px;
-  margin: 0 3px;
+  padding: 0 4px;
+  margin: 0 2px;
   transition: 250ms;
 }
 
@@ -59,7 +57,7 @@ window#waybar {
 #clock:hover {
   background-color: #ff5b5b;
   color: #17121a;
-  border-radius: 6px 6px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 #cava {
@@ -72,8 +70,8 @@ window#waybar {
   background-color: #17121a;
   border: 1px solid;
   border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  border-radius: 6px;
-  padding: 0 3px;
+  border-radius: 4px;
+  padding: 0 2px;
   margin: 4px 4px 5px 4px;
 }
 
