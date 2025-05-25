@@ -1,20 +1,20 @@
 matches:
-  - trigger: ";wyn"
-    replace: "ƿ"
-  - trigger: ";WYN"
-    replace: "Ƿ"
+  - trigger: ';wyn'
+    replace: 'ƿ'
+  - trigger: ';WYN'
+    replace: 'Ƿ'
 
-  - trigger: ";thorn"
-    replace: "þ"
-  - trigger: ";THORN"
-    replace: "Þ"
+  - trigger: ';thorn'
+    replace: 'þ'
+  - trigger: ';THORN'
+    replace: 'Þ'
 
-  - trigger: ";ash"
-    replace: "æ"
-  - trigger: ";ASH"
-    replace: "Æ"
+  - trigger: ';ash'
+    replace: 'æ'
+  - trigger: ';ASH'
+    replace: 'Æ'
 
-  - trigger: ";edh"
-    replace: "ð"
-  - trigger: ";EDH"
-    replace: "Ð"
+  - trigger: ';edh'
+    replace: 'ð'
+  - trigger: ';EDH'
+    replace: 'Ð'

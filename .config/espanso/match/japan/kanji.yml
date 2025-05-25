@@ -1,48 +1,48 @@
 matches:
-  - trigger: "`~zero"
-    replace: "零"
+  - trigger: '`~zero'
+    replace: '零'
 
-  - trigger: "`~ichi"
-    replace: "一"
+  - trigger: '`~ichi'
+    replace: '一'
 
-  - trigger: "`~ni"
-    replace: "二"
+  - trigger: '`~ni'
+    replace: '二'
 
-  - trigger: "`~yon"
-    replace: "四"
+  - trigger: '`~yon'
+    replace: '四'
 
-  - trigger: "`~go"
-    replace: "五"
+  - trigger: '`~go'
+    replace: '五'
 
-  - trigger: "`~roku"
-    replace: "六"
+  - trigger: '`~roku'
+    replace: '六'
 
-  - trigger: "`~nana"
-    replace: "七"
+  - trigger: '`~nana'
+    replace: '七'
 
-  - trigger: "`~hachi"
-    replace: "八"
+  - trigger: '`~hachi'
+    replace: '八'
 
-  - trigger: "`~kyu"
-    replace: "九"
+  - trigger: '`~kyu'
+    replace: '九'
 
-  - trigger: "`~juu"
-    replace: "十"
+  - trigger: '`~juu'
+    replace: '十'
 
-  - trigger: "`~hyaku"
-    replace: "百"
+  - trigger: '`~hyaku'
+    replace: '百'
 
-  - trigger: "`~sen"
-    replace: "千"
+  - trigger: '`~sen'
+    replace: '千'
 
-  - trigger: "`~kitana"
-    replace: "汚"
+  - trigger: '`~kitana'
+    replace: '汚'
 
-  - trigger: "`~ou"
-    replace: "王"
+  - trigger: '`~ou'
+    replace: '王'
 
-  - trigger: "`~tabe"
-    replace: "食"
+  - trigger: '`~tabe'
+    replace: '食'
 
-  - trigger: "`~ma"
-    replace: "魔"
+  - trigger: '`~ma'
+    replace: '魔'

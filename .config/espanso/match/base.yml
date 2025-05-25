@@ -11,25 +11,25 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
 
 matches:
-  - trigger: ";ny"
-    replace: "ñ"
-  - trigger: ";NY"
-    replace: "Ñ"
+  - trigger: ';ny'
+    replace: 'ñ'
+  - trigger: ';NY'
+    replace: 'Ñ'
 
   # But matches can also be dynamic:
 
   # Print the current date
-  - trigger: ";date"
-    replace: "{{mydate}}"
+  - trigger: ';date'
+    replace: '{{mydate}}'
     vars:
       - name: mydate
         type: date
         params:
-          format: "%b %d, %Y"
+          format: '%b %d, %Y'
 
   # Print the output of a shell command
-  - trigger: ":shell"
-    replace: "{{output}}"
+  - trigger: ':shell'
+    replace: '{{output}}'
     vars:
       - name: output
         type: shell

@@ -1,9 +1,9 @@
 matches:
-  - trigger: ":bl"
-    replace: "about:blank"
-  - trigger: ":cf"
-    replace: "about:config"
-  - trigger: ":pr"
-    replace: "about:preferences"
-  - trigger: ":sp"
-    replace: "about:support"
+  - trigger: ':bl'
+    replace: 'about:blank'
+  - trigger: ':cf'
+    replace: 'about:config'
+  - trigger: ':pr'
+    replace: 'about:preferences'
+  - trigger: ':sp'
+    replace: 'about:support'
