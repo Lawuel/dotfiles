@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["group/power", "bluetooth", "network", "mpris"],
+  "modules-left": ["group/power", "bluetooth", "network", "mpris", "cava"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "wireplumber",
@@ -85,6 +85,10 @@
       "playing": "󰏤"
     },
     "tooltip-format": "{artist} | {title}"
+  },
+
+  "cava": {
+    "cava_config": "~/.config/cava/config"
   },
 
   "hyprland/workspaces": {
