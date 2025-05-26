@@ -89,7 +89,7 @@
 
   "cava": {
     "cava_config": "/home/mano/.config/cava/config",
-    "framerate": 24,
+    "framerate": 20,
     "autosens": 1,
     "sensitivity": 1,
     "bars": 29,
