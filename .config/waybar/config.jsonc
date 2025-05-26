@@ -106,7 +106,7 @@
     "input_delay": 2,
     "sleep_timer": 1,
     "hide_on_silence": true,
-    "format-icons": [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "format-icons": [" ", "🮂", "🮃", "🮄", "🮅", "🮆", "█"],
     "actions": {
       "on-click-right": "mode"
     }
