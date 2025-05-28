@@ -77,14 +77,12 @@
   },
 
   "mpris": {
-    "format": "󰴙",
-    "format-paused": "{status_icon}",
-    "format-playing": "{status_icon}",
+    "format": "{status_icon}",
     "status-icons": {
       "paused": "󰐊",
       "playing": "󰏤"
     },
-    "tooltip-format": "{artist} | {title}"
+    "tooltip-format": "{player}: {artist} | {title}"
   },
 
   "cava": {
