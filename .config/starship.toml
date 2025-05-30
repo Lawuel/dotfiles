@@ -1,12 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '''
-[⟨$directory⟩](#ff5b5b)
-[𜰘𜰉𜰉𜰙 ](#f5edb5 bold)
+[⟨$directory⟩](#e9eee6)
+[𜰘𜰉𜰉𜰙 ](#e9eee6 bold)
 '''
 
 [directory]
-style = "fg:#ff5b5b bold"
+style = "fg:#e9eee6 bold"
 format = '[$path]($style)'
 
 [package]

@@ -6,8 +6,8 @@
 }
 
 window#waybar {
-  background-color: rgba(23, 18, 26, 0.5);
-  border-bottom: 1px solid #ff5b5b;
+  background-color: #17121a;
+  border-bottom: 1px solid #e9eee6;
 }
 
 #workspaces button {
@@ -33,7 +33,7 @@ window#waybar {
 #user,
 #clock {
   background-color: #17121a;
-  color: #f5edb5;
+  color: #e9eee6;
   border: 0;
   padding: 0 4px;
   margin: 0 2px;
@@ -57,9 +57,8 @@ window#waybar {
 #memory:hover,
 #user:hover,
 #clock:hover {
-  background-color: #ff5b5b;
+  background-color: #e9eee6;
   color: #17121a;
-  border-radius: 4px 4px 0 0;
 }
 
 .modules-left,
@@ -67,14 +66,15 @@ window#waybar {
 .modules-right {
   background-color: #17121a;
   border: 1px solid;
-  border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  border-radius: 4px;
+  border-color: #e9eee6;
+  border-radius: 0;
   padding: 0 2px;
   margin: 4px 4px 5px 4px;
 }
 
 tooltip {
   background-color: #17121a;
-  border-color: #f5edb5 #ff5b5b #ff5b5b #f5edb5;
-  color: #ff5b5b;
+  border-color: #e9eee6;
+  border-radius: 0;
+  color: #e9eee6;
 }
