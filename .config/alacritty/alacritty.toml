@@ -1,5 +1,5 @@
 [window]
-opacity = 1
+opacity = 0.5
 
 [font]
 normal = { family = "DejaVu Sans Mono", style = "Regular" }
