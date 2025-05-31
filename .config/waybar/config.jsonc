@@ -41,7 +41,7 @@
 
   "custom/suspend": {
     "format": "󰤄",
-    "on-click": "systemctl suspend",
+    "on-click": "suspend",
     "tooltip-format": "suspend"
   },
 
@@ -59,7 +59,7 @@
 
   "custom/logout": {
     "format": "󰍃",
-    "on-click": "hyprctl dispatch exit",
+    "on-click": "loginctl terminate-user \"\"",
     "tooltip-format": "logout"
   },
 
@@ -72,7 +72,7 @@
   },
 
   "bluetooth": {
-    "on-click": "blueman-manager",
+    "on-click": "uwsm app -- blueman-manager",
     "format": "󰂯",
     "format-off": "󰂲",
     "format-disabled": "󰂲",
@@ -84,7 +84,7 @@
   },
 
   "network": {
-    "on-click": "nm-connection-editor",
+    "on-click": "uwsm app -- nm-connection-editor",
     "format-disconnected": "󰤮",
     "tooltip-format": "{essid}",
     "format": "{icon}",
@@ -135,7 +135,7 @@
     }
   },
   "wireplumber": {
-    "on-click": "pavucontrol",
+    "on-click": "uwsm app -- pavucontrol",
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"]
