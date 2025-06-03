@@ -24,6 +24,7 @@
     "modules": [
       "custom/show-power-options",
       "custom/suspend",
+      "custom/hibernate",
       "custom/reboot",
       "custom/shutdown",
       "custom/logout"
@@ -43,6 +44,12 @@
     "format": "󰤄",
     "on-click": "systemctl suspend",
     "tooltip-format": "suspend"
+  },
+
+  "custom/hibernate": {
+    "format": "󰜗",
+    "on-click": "systemctl hibernate",
+    "tooltip-format": "hibernate"
   },
 
   "custom/reboot": {
