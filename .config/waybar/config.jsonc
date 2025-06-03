@@ -76,7 +76,9 @@
     "format-icons": {
       "activated": "󰈈",
       "deactivated": "󰈉"
-    }
+    },
+    "tooltip-format-activated": "Activated",
+    "tooltip-format-deactivated": "Deactivated"
   },
 
   "bluetooth": {
