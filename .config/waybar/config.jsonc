@@ -37,37 +37,38 @@
 
   "custom/show-power-options": {
     "format": "󱐋",
-    "tooltip": false
+    "tooltip": true,
+    "tooltip-format": "Power Options"
   },
 
   "custom/suspend": {
     "format": "󰤄",
     "on-click": "systemctl suspend",
-    "tooltip-format": "suspend"
+    "tooltip-format": "Suspend"
   },
 
   "custom/hibernate": {
     "format": "󰜗",
     "on-click": "systemctl hibernate",
-    "tooltip-format": "hibernate"
+    "tooltip-format": "Hibernate"
   },
 
   "custom/reboot": {
     "format": "󰜉",
     "on-click": "systemctl reboot",
-    "tooltip-format": "reboot"
+    "tooltip-format": "Reboot"
   },
 
   "custom/shutdown": {
     "format": "󰐥",
     "on-click": "systemctl poweroff",
-    "tooltip-format": "shutdown"
+    "tooltip-format": "Shutdown"
   },
 
   "custom/logout": {
     "format": "󰍃",
     "on-click": "loginctl terminate-user \"\"",
-    "tooltip-format": "logout"
+    "tooltip-format": "Logout"
   },
 
   "idle_inhibitor": {
@@ -85,8 +86,8 @@
     "format-disabled": "󰂲",
     "format-connected": "󰂱",
     "tooltip-format": "bluetooth",
-    "tooltip-format-off": "off",
-    "tooltip-format-disabled": "disabled",
+    "tooltip-format-off": "Off",
+    "tooltip-format-disabled": "Disabled",
     "tooltip-format-connected": "{device_alias}"
   },
 
