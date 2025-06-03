@@ -115,7 +115,7 @@
     "bar_delimiter": 0,
     "monstercat": false,
     "waves": false,
-    "noise_reduction": 0.5,
+    "noise_reduction": 0,
     "input_delay": 2,
     "sleep_timer": 1,
     "hide_on_silence": true,
