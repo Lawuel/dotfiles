@@ -179,7 +179,9 @@
     "on-click": "uwsm-app -- pavucontrol",
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
-    "format-icons": ["󰕿", "󰖀", "󰕾"]
+    "format-icons": ["󰕿", "󰖀", "󰕾"],
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -n synth 0.1 square 440",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -n synth 0.1 square 110"
   },
 
   "backlight": {
