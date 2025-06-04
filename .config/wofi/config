@@ -1,0 +1,13 @@
+prompt=
+matching=fuzzy
+normal_window=false
+insensitive=true
+lines=10
+show=drun
+columns=1
+orientation=vertical
+content_halign=start
+location=top_left
+width=13%
+x=4
+y=4
