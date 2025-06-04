@@ -6,8 +6,8 @@
     "idle_inhibitor",
     "bluetooth",
     "network",
-    "mpris",
-    "cava"
+    "cava",
+    "mpris"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -128,7 +128,7 @@
     "noise_reduction": 0,
     "input_delay": 2,
     "sleep_timer": 1,
-    "hide_on_silence": true,
+    "hide_on_silence": false,
     "format-icons": [
       "🭹",
       "🭸",
@@ -180,8 +180,8 @@
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
-    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -n synth 0.1 square 440",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -n synth 0.1 square 110"
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -n synth 0.1 sine 120",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -n synth 0.1 sine 110"
   },
 
   "backlight": {
