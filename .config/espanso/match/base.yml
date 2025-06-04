@@ -16,6 +16,27 @@ matches:
   - trigger: ';NY'
     replace: 'Ñ'
 
+  - trigger: '`excl'
+    replace: '!'
+  - trigger: '`at'
+    replace: '@'
+  - trigger: '`num'
+    replace: '#'
+  - trigger: '`doll'
+    replace: '$'
+  - trigger: '`per'
+    replace: '%'
+  - trigger: '`car'
+    replace: '^'
+  - trigger: '`and'
+    replace: '*'
+  - trigger: '`st'
+    replace: '&'
+  - trigger: '`opb'
+    replace: '('
+  - trigger: '`clb'
+    replace: ')'
+
   # But matches can also be dynamic:
 
   # Print the current date
