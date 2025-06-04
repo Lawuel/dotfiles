@@ -188,8 +188,8 @@
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
-    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -n synth 0.5 sine 640 fade l 0 0.5 0.5",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -n synth 0.5 sine 320 fade l 0 0.5 0.5"
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -n synth 0.5 sine 640 fade l 0 0.5 0.5 vol 0.1",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -n synth 0.5 sine 320 fade l 0 0.5 0.5 vol 0.1"
   },
 
   "backlight": {
