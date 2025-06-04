@@ -111,7 +111,7 @@
   },
 
   "cava": {
-    "cava_config": "/home/mano/.config/cava/config",
+    "cava_config": "/home/$USER/.config/cava/config",
     "framerate": 30,
     "autosens": 1,
     "sensitivity": 1,
@@ -188,8 +188,8 @@
     "format-muted": "󰝟 {volume}%",
     "format": "{icon} {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
-    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/mano/Music/Button-Sounds/volume_up.wav",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/mano/Music/Button-Sounds/volume_down.wav"
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/$USER/Music/Button-Sounds/volume_up.wav",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/$USER/Music/Button-Sounds/volume_down.wav"
   },
 
   "backlight": {

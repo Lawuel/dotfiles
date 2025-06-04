@@ -1,5 +1,5 @@
-export HYPRLAND_CONFIG=/home/mano/.config/hypr/hyprland.conf
-export HYPRSHOT_DIR=/home/mano/Pictures/screenshots/
+export HYPRLAND_CONFIG=/home/$USER/.config/hypr/hyprland.conf
+export HYPRSHOT_DIR=/home/$USER/Pictures/screenshots/
 export HYPRLAND_TRACE=1
 export HYPRLAND_NO_RT=1
 export HYPRLAND_NO_SD_NOTIFY=1
