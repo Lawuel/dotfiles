@@ -10,6 +10,7 @@
 }
 
 #input {
-  background-color: #17121a;
+  background-color: transparent;
   border: 1px solid #e9eee6;
+  border-bottom: none;
 }
