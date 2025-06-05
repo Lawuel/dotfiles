@@ -1,5 +1,5 @@
 prompt=
-matching=fuzzy
+matching=contains
 normal_window=false
 insensitive=true
 lines=25
