@@ -8,6 +8,27 @@ size = 12
 [colors]
 cursor = { text = "#17121a", cursor = "#e9eee6" }
 selection = { text = "#17121a", cursor = "#e9eee6" }
+
 [colors.primary]
 foreground = "#e9eee6"
 background = "#17121a"
+
+[colors.normal]
+black = "#0c090d"
+white = "#757773"
+red = "#802e2e"
+green = "#2e802e"
+blue = "#2e2e80"
+cyan = "#5b7b77"
+magenta = "#7b5b77"
+yellow = "#7b775b"
+
+[colors.bright]
+black = "#17121a"
+white = "#e9eee6"
+red = "#ff5b5b"
+green = "#5bff5b"
+blue = "#5b5bff"
+cyan = "#b5f5ed"
+magenta = "#f5b5ed"
+yellow = "#f5edb5"
