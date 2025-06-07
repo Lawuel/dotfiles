@@ -39,7 +39,6 @@ window#waybar:hover {
 #clock {
   background-color: transparent;
   color: #e9eee6;
-  border: 0;
   padding: 0 4px;
   margin: 0 2px;
   transition: 250ms;
@@ -70,9 +69,9 @@ window#waybar:hover {
 .modules-left,
 .modules-center,
 .modules-right {
-  /* background-color: #17121a;
+  background-color: #17121a;
   border: 1px solid;
-  border-color: #e9eee6; */
+  border-color: #e9eee6; 
   border-radius: 0;
   padding: 0 2px;
   margin: 4px 4px 5px 4px;

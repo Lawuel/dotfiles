@@ -209,8 +209,8 @@
     "format-muted": "{volume}% 󰝟",
     "format": "{volume}% {icon}",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
-    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/$USER/Music/Button-Sounds/volume_up.wav",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/$USER/Music/Button-Sounds/volume_down.wav"
+    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/$USER/Music/button-sounds/volume_up.wav",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/$USER/Music/button-sounds/volume_down.wav"
   },
 
   "backlight": {
