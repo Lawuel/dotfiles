@@ -205,7 +205,7 @@
   },
 
   "wireplumber": {
-    "on-click": "uwsm-app -- pavucontrol",
+    "on-click": "uwsm-app -- pwvucontrol",
     "format-muted": "{volume}% 󰝟",
     "format": "{volume}% {icon}",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
