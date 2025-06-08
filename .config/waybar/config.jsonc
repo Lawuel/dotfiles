@@ -1,241 +1,241 @@
 {
-  "layer": "top",
-  "position": "top",
-  "modules-left": [
-    "group/power",
-    "idle_inhibitor",
-    "bluetooth",
-    "network",
-    "mpris"
-  ],
-  "modules-center": ["cava", "hyprland/workspaces", "cava"],
-  "modules-right": [
-    "wireplumber",
-    "backlight",
-    "cpu",
-    "memory",
-    "custom/notification",
-    "user",
-    "clock"
-  ],
+	"layer": "top",
+	"position": "top",
+	"modules-left": [
+		"group/power",
+		"idle_inhibitor",
+		"bluetooth",
+		"network",
+		"mpris"
+	],
+	"modules-center": ["cava", "hyprland/workspaces", "cava"],
+	"modules-right": [
+		"wireplumber",
+		"backlight",
+		"cpu",
+		"memory",
+		"custom/notification",
+		"user",
+		"clock"
+	],
 
-  "group/power": {
-    "orientation": "horizontal",
-    "modules": [
-      "custom/show-power-options",
-      "custom/suspend",
-      "custom/hibernate",
-      "custom/reboot",
-      "custom/shutdown",
-      "custom/logout"
-    ],
-    "drawer": {
-      "click-to-reveal": true,
-      "transition-left-to-right": true
-    }
-  },
+	"group/power": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/show-power-options",
+			"custom/suspend",
+			"custom/hibernate",
+			"custom/reboot",
+			"custom/shutdown",
+			"custom/logout"
+		],
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-left-to-right": true
+		}
+	},
 
-  "custom/show-power-options": {
-    "format": "󱐋",
-    "tooltip": true,
-    "tooltip-format": "Power Options"
-  },
+	"custom/show-power-options": {
+		"format": "󱐋",
+		"tooltip": true,
+		"tooltip-format": "Power Options"
+	},
 
-  "custom/suspend": {
-    "format": "󰤄",
-    "on-click": "systemctl suspend",
-    "tooltip-format": "Suspend"
-  },
+	"custom/suspend": {
+		"format": "󰤄",
+		"on-click": "systemctl suspend",
+		"tooltip-format": "Suspend"
+	},
 
-  "custom/hibernate": {
-    "format": "󰜗",
-    "on-click": "systemctl hibernate",
-    "tooltip-format": "Hibernate"
-  },
+	"custom/hibernate": {
+		"format": "󰜗",
+		"on-click": "systemctl hibernate",
+		"tooltip-format": "Hibernate"
+	},
 
-  "custom/reboot": {
-    "format": "󰜉",
-    "on-click": "systemctl reboot",
-    "tooltip-format": "Reboot"
-  },
+	"custom/reboot": {
+		"format": "󰜉",
+		"on-click": "systemctl reboot",
+		"tooltip-format": "Reboot"
+	},
 
-  "custom/shutdown": {
-    "format": "󰐥",
-    "on-click": "systemctl poweroff",
-    "tooltip-format": "Shutdown"
-  },
+	"custom/shutdown": {
+		"format": "󰐥",
+		"on-click": "systemctl poweroff",
+		"tooltip-format": "Shutdown"
+	},
 
-  "custom/logout": {
-    "format": "󰍃",
-    "on-click": "loginctl terminate-user \"\"",
-    "tooltip-format": "Logout"
-  },
+	"custom/logout": {
+		"format": "󰍃",
+		"on-click": "loginctl terminate-user \"\"",
+		"tooltip-format": "Logout"
+	},
 
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "󰈈",
-      "deactivated": "󰈉"
-    },
-    "tooltip-format-activated": "Activated",
-    "tooltip-format-deactivated": "Deactivated"
-  },
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "󰈈",
+			"deactivated": "󰈉"
+		},
+		"tooltip-format-activated": "Activated",
+		"tooltip-format-deactivated": "Deactivated"
+	},
 
-  "bluetooth": {
-    "on-click": "uwsm-app -- blueman-manager",
-    "format": "󰂯",
-    "format-off": "󰂲",
-    "format-disabled": "󰂲",
-    "format-connected": "󰂱",
-    "tooltip-format": "bluetooth",
-    "tooltip-format-off": "Off",
-    "tooltip-format-disabled": "Disabled",
-    "tooltip-format-connected": "{device_alias}"
-  },
+	"bluetooth": {
+		"on-click": "uwsm-app -- blueman-manager",
+		"format": "󰂯",
+		"format-off": "󰂲",
+		"format-disabled": "󰂲",
+		"format-connected": "󰂱",
+		"tooltip-format": "bluetooth",
+		"tooltip-format-off": "Off",
+		"tooltip-format-disabled": "Disabled",
+		"tooltip-format-connected": "{device_alias}"
+	},
 
-  "network": {
-    "on-click": "uwsm-app -- nm-connection-editor",
-    "format-disconnected": "󰤮",
-    "tooltip-format": "{essid}",
-    "format": "{icon}",
-    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
-  },
+	"network": {
+		"on-click": "uwsm-app -- nm-connection-editor",
+		"format-disconnected": "󰤮",
+		"tooltip-format": "{essid}",
+		"format": "{icon}",
+		"format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
+	},
 
-  "mpris": {
-    "format": "{status_icon}",
-    "status-icons": {
-      "paused": "󰐊",
-      "playing": "󰏤"
-    },
-    "tooltip-format": "{player}: {artist} | {title}"
-  },
+	"mpris": {
+		"format": "{status_icon}",
+		"status-icons": {
+			"paused": "󰐊",
+			"playing": "󰏤"
+		},
+		"tooltip-format": "{player}: {artist} | {title}"
+	},
 
-  "cava": {
-    "cava_config": "/home/$USER/.config/cava/config",
-    "framerate": 30,
-    "autosens": 1,
-    "sensitivity": 1,
-    "bars": 32,
-    "lower_cutoff_freq": 50,
-    "higher_cutoff_freq": 10000,
-    "method": "pipewire",
-    "source": "auto",
-    "stereo": true,
-    "reverse": false,
-    "bar_delimiter": 0,
-    "monstercat": false,
-    "waves": false,
-    "noise_reduction": 0,
-    "input_delay": 2,
-    "sleep_timer": 1,
-    "hide_on_silence": false,
-    "format-icons": [
-      "━",
-      "🭹",
-      "━",
-      "🭸",
-      "━",
-      "🭹",
-      "🭺",
-      "🭹",
-      "━",
-      "🭸",
-      "🭷",
-      "🭸",
-      "━",
-      "🭹",
-      "🭺",
-      "🭻",
-      "🭺",
-      "🭹",
-      "━",
-      "🭸",
-      "🭷",
-      "🭶",
-      "🭷",
-      "🭸",
-      "━",
-      "🭹",
-      "🭺",
-      "🭻",
-      "▁",
-      "🭻",
-      "🭺",
-      "🭹",
-      "━",
-      "🭸",
-      "🭷",
-      "🭶",
-      "▔"
-    ], //▁🭻🭺🭹🭸🭷🭶▔   ░▒▓█   ━🭹━🭸━🭹🭺🭹━🭸🭷🭸━🭹🭺🭻🭺🭹━🭸🭷🭶🭷🭸━🭹🭺🭻▁🭻🭺🭹━🭸🭷🭶▔
-    "actions": {
-      "on-click-right": "mode"
-    }
-  },
+	"cava": {
+		"cava_config": "/home/$USER/.config/cava/config",
+		"framerate": 30,
+		"autosens": 1,
+		"sensitivity": 1,
+		"bars": 64,
+		"lower_cutoff_freq": 50,
+		"higher_cutoff_freq": 10000,
+		"method": "pipewire",
+		"source": "auto",
+		"stereo": true,
+		"reverse": false,
+		"bar_delimiter": 0,
+		"monstercat": false,
+		"waves": false,
+		"noise_reduction": 0,
+		"input_delay": 2,
+		"sleep_timer": 1,
+		"hide_on_silence": false,
+		"format-icons": [
+			"━",
+			"🭹",
+			"━",
+			"🭸",
+			"━",
+			"🭹",
+			"🭺",
+			"🭹",
+			"━",
+			"🭸",
+			"🭷",
+			"🭸",
+			"━",
+			"🭹",
+			"🭺",
+			"🭻",
+			"🭺",
+			"🭹",
+			"━",
+			"🭸",
+			"🭷",
+			"🭶",
+			"🭷",
+			"🭸",
+			"━",
+			"🭹",
+			"🭺",
+			"🭻",
+			"▁",
+			"🭻",
+			"🭺",
+			"🭹",
+			"━",
+			"🭸",
+			"🭷",
+			"🭶",
+			"▔"
+		], //▁🭻🭺🭹🭸🭷🭶▔   ░▒▓█   ━🭹━🭸━🭹🭺🭹━🭸🭷🭸━🭹🭺🭻🭺🭹━🭸🭷🭶🭷🭸━🭹🭺🭻▁🭻🭺🭹━🭸🭷🭶▔
+		"actions": {
+			"on-click-right": "mode"
+		}
+	},
 
-  "hyprland/workspaces": {
-    "all-outputs": true,
-    "format": "{icon}",
-    "format-icons": {
-      "urgent": "󰳤",
-      "active": "󰝤",
-      "default": "󰝣"
-    }
-  },
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"format": "{icon}",
+		"format-icons": {
+			"urgent": "󰳤",
+			"active": "󰝤",
+			"default": "󰝣"
+		}
+	},
 
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{} {icon}",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
-      "dnd-notification": "󰅸",
-      "dnd-none": "󰂜",
-      "inhibited-notification": "󱅫",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰅸",
-      "dnd-inhibited-none": "󰂜"
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
+	"custom/notification": {
+		"tooltip": false,
+		"format": "{} {icon}",
+		"format-icons": {
+			"notification": "󱅫",
+			"none": "󰂚",
+			"dnd-notification": "󰅸",
+			"dnd-none": "󰂜",
+			"inhibited-notification": "󱅫",
+			"inhibited-none": "󰂚",
+			"dnd-inhibited-notification": "󰅸",
+			"dnd-inhibited-none": "󰂜"
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
 
-  "wireplumber": {
-    "on-click": "uwsm-app -- pwvucontrol",
-    "format-muted": "{volume}% 󰝟",
-    "format": "{volume}% {icon}",
-    "format-icons": ["󰕿", "󰖀", "󰕾"],
-    "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/$USER/Music/button-sounds/volume_up.wav",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/$USER/Music/button-sounds/volume_down.wav"
-  },
+	"wireplumber": {
+		"on-click": "uwsm-app -- pwvucontrol",
+		"format-muted": "{volume}% 󰝟",
+		"format": "{volume}% {icon}",
+		"format-icons": ["󰕿", "󰖀", "󰕾"],
+		"on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+ && play -q /home/$USER/Music/button-sounds/volume_up.wav",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && play -q /home/$USER/Music/button-sounds/volume_down.wav"
+	},
 
-  "backlight": {
-    "device": "intel_backlight",
-    "tooltip": false,
-    "format": "{percent}% {icon}",
-    "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
-  },
+	"backlight": {
+		"device": "intel_backlight",
+		"tooltip": false,
+		"format": "{percent}% {icon}",
+		"format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
+	},
 
-  "cpu": {
-    "interval": 15,
-    "format": "{usage}% 󰙅"
-  },
+	"cpu": {
+		"interval": 15,
+		"format": "{usage}% 󰙅"
+	},
 
-  "memory": {
-    "interval": 15,
-    "format": "{percentage}% 󰌨"
-  },
+	"memory": {
+		"interval": 15,
+		"format": "{percentage}% 󰌨"
+	},
 
-  "user": {
-    "format": "{work_H}:{work_M}"
-  },
+	"user": {
+		"format": "{work_H}:{work_M}"
+	},
 
-  "clock": {
-    "format": "{:%I:%M}",
-    "tooltip-format": "{:%a %b %d, %Y}"
-  }
+	"clock": {
+		"format": "{:%I:%M}",
+		"tooltip-format": "{:%a %b %d, %Y}"
+	}
 }
