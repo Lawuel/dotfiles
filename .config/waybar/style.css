@@ -66,7 +66,7 @@ window#waybar:hover {
   color: #757773;
 }
 
-.modules-left,
+/* .modules-left,
 .modules-center,
 .modules-right {
   background-color: #17121a;
@@ -75,7 +75,7 @@ window#waybar:hover {
   border-radius: 0;
   padding: 0 2px;
   margin: 4px 4px 5px 4px;
-}
+} */
 
 tooltip {
   background-color: #17121a;
