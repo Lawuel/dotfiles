@@ -1,72 +1,135 @@
+// Load with --load-config examples/2.jsonc
+// Note that you must replace the image path to an existing image to display it.
+
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": {
-    "type": "small", // Logo type: auto, builtin, small, file, etc.
-    "source": "arch", // Built-in logo name or file path
-    "width": 65,
-    "height": 35,
-    "padding": {
-      "top": 2,
-      "left": 1,
-      "right": 2
-    },
-    "color": {
-      // Override logo colors
-      "1": "#67FFD6",
-      "2": "#67FFD6"
-    }
-  },
-
-  "display": {
-    "separator": ":", // Separator between keys and values
-    "color": {
-      "keys": "#67FFD6",
-      "title": "#67FFD6"
-    },
-    "key": {
-      "width": 22, // Aligns keys to this width
-      "type": "string" // string, icon, both, or none
-    },
-    "bar": {
-      "width": 32, // Width of percentage bars
-      "charElapsed": "|", // Character for elapsed portion
-      "charTotal": "-" // Character for total portion
-    },
-    "percent": {
-      "type": 9, // 1=number, 2=bar, 3=both, 9=colored number
-      "color": {
-        "green": "#16FC5B",
-        "yellow": "#F5EDB5",
-        "red": "#FF5B5B"
-      }
-    }
-  },
-
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "locale",
-    "break",
-    "colors"
-  ]
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"type": "small",
+		"padding": {
+			"top": 2
+		},
+		"color": {
+			"1": "#b5f5ed",
+			"2": "#b5f5ed"
+		}
+	},
+	"display": {
+		"separator": " ",
+		"constants": ["──────────────────────────────"]
+	},
+	"modules": [
+		{
+			"type": "custom",
+			"format": "┌{$1}󰝤{$1}┐",
+			"outputColor": "90"
+		},
+		{
+			"type": "title",
+			"keyWidth": 10
+		},
+		{
+			"type": "custom",
+			"format": "└{$1}󰝤{$1}┘",
+			"outputColor": "90"
+		},
+		{
+			"type": "custom",
+			"format": " {#90}󰝤 {#31}󰝤 {#32}󰝤 {#33}󰝤 {#34}󰝤 {#35}󰝤 {#36}󰝤 {#37}󰝤 {#38}󰝤 {#39}󰝤    󰝤 {#38}󰝤 {#37}󰝤 {#36}󰝤 {#35}󰝤 {#34}󰝤 {#33}󰝤 {#32}󰝤 {#31}󰝤 {#90}󰝤"
+		},
+		{
+			"type": "custom",
+			"format": "┌{$1}󰝤{$1}┐",
+			"outputColor": "90"
+		},
+		{
+			"type": "os",
+			"key": "{icon} OS",
+			"keyColor": "#b5f5ed"
+		},
+		{
+			"type": "kernel",
+			"key": "│ ├󰒓",
+			"keyColor": "#b5f5ed"
+		},
+		{
+			"type": "packages",
+			"key": "│ ├󰏗",
+			"keyColor": "#b5f5ed"
+		},
+		{
+			"type": "shell",
+			"key": "│ └󰞷",
+			"keyColor": "#b5f5ed"
+		},
+		{
+			"type": "wm",
+			"key": "󰍹 DE/WM",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "lm",
+			"key": "│ ├󰀄",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "wmtheme",
+			"key": "│ ├󰏘",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "icons",
+			"key": "│ ├󰠱",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "terminal",
+			"key": "│ ├󰆍",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "wallpaper",
+			"key": "│ └󰸉",
+			"keyColor": "#f5b5ed"
+		},
+		{
+			"type": "host",
+			"key": "󰌢 PC",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "cpu",
+			"key": "│ ├󰙅",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "gpu",
+			"key": "│ ├󰢮",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "disk",
+			"key": "│ ├󰋊",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "memory",
+			"key": "│ ├󰌨",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "swap",
+			"key": "│ ├󰯍",
+			"keyColor": "#f5edb5"
+		},
+		{
+			"type": "custom",
+			"format": "└{$1}󰝤{$1}┘",
+			"outputColor": "90"
+		},
+		"break",
+		{
+			"type": "custom",
+			"format": " {#90}󰝤 {#31}󰝤 {#32}󰝤 {#33}󰝤 {#34}󰝤 {#35}󰝤 {#36}󰝤 {#37}󰝤 {#38}󰝤 {#39}󰝤    󰝤 {#38}󰝤 {#37}󰝤 {#36}󰝤 {#35}󰝤 {#34}󰝤 {#33}󰝤 {#32}󰝤 {#31}󰝤 {#90}󰝤"
+		}
+	]
 }
