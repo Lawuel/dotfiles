@@ -6,11 +6,11 @@ normal = { family = "DejaVu Sans Mono", style = "Regular" }
 size = 12
 
 [colors]
-cursor = { text = "#17121a", cursor = "#e9eee6" }
-selection = { text = "#17121a", cursor = "#e9eee6" }
+cursor = { text = "#17121a", cursor = "#f5b5ed" }
+selection = { text = "#17121a", cursor = "#f5b5ed" }
 
 [colors.primary]
-foreground = "#e9eee6"
+foreground = "#f5b5ed"
 background = "#17121a"
 
 [colors.normal]

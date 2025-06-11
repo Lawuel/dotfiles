@@ -1,21 +1,18 @@
 * {
-  font-family: 'DejaVu Sans Mono', 'Noto Sans Mono', 'Font Awesome 6 Brands',
-    'Font Awesome 6 Free', 'Symbols Nerd Font Mono', 'Symbols Nerd Font';
-  font-size: 12px;
-  font-weight: bold;
+	font-family: "DejaVu Sans Mono", "Noto Sans Mono", "Font Awesome 6 Brands",
+		"Font Awesome 6 Free", "Symbols Nerd Font Mono", "Symbols Nerd Font";
+	font-size: 12px;
+	font-weight: bold;
 }
 
 window#waybar {
-  background-color: transparent;
-  border-bottom: none;
-}
-window#waybar:hover {
-  background-color: red;
+	background-color: transparent;
+	border-bottom: none;
 }
 
 #workspaces button {
-  text-shadow: inherit;
-  box-shadow: inherit;
+	text-shadow: inherit;
+	box-shadow: inherit;
 }
 
 #custom-show-power-options,
@@ -37,11 +34,11 @@ window#waybar:hover {
 #memory,
 #user,
 #clock {
-  background-color: transparent;
-  color: #e9eee6;
-  padding: 0 4px;
-  margin: 0 2px;
-  transition: 250ms;
+	background-color: transparent;
+	color: #f5b5ed;
+	padding: 0 4px;
+	margin: 0 2px;
+	transition: 250ms;
 }
 
 #custom-show-power-options:hover,
@@ -63,7 +60,7 @@ window#waybar:hover {
 #memory:hover,
 #user:hover,
 #clock:hover {
-  color: #757773;
+	color: #7b5b77;
 }
 
 /* .modules-left,
@@ -78,8 +75,8 @@ window#waybar:hover {
 } */
 
 tooltip {
-  background-color: #17121a;
-  border-color: #e9eee6;
-  border-radius: 0;
-  color: #e9eee6;
+	background-color: #17121a;
+	border-color: #7b5b77;
+	border-radius: 0;
+	color: #f5b5ed;
 }
