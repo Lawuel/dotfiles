@@ -1,6 +1,9 @@
 [window]
 opacity = 1
 
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+
 [font]
 normal = { family = "DejaVu Sans Mono", style = "Regular" }
 size = 12
