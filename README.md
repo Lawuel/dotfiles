@@ -1,3 +1,4 @@
 My dotfiles for Hyprland.
 
-make a folder for `screenshots` and `wallpapers`
+notes:
+make a folder for `$HOME/screenshots/` & `$HOME/wallpapers/`
