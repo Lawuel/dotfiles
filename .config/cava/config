@@ -8,7 +8,7 @@
 ; mode = normal
 
 # Accepts only non-negative values.
- framerate = 20
+ framerate = 60
 
 # 'autosens' will attempt to decrease sensitivity if the bars peak. 1 = on, 0 = off
 # new as of 0.6.0 autosens of low values (dynamic range)
@@ -18,23 +18,23 @@
 
 # Manual sensitivity in %. If autosens is enabled, this will only be the initial value.
 # 200 means double height. Accepts only non-negative values.
- sensitivity = 50
+ sensitivity = 20
 
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
- bars = 32
- bar_width = 1
- bar_spacing = 1
+ bars = 0
+ bar_width = 4
+ bar_spacing = 0
 # bar_height is only used for output in "noritake" format
 ; bar_height = 32
 
 # For SDL width and space between bars is in pixels, defaults are:
- bar_width = 1
- bar_spacing = 1
+ bar_width = 4
+ bar_spacing = 0
 
 # sdl_glsl have these default values, they are only used to calculate max number of bars.
- bar_width = 1
- bar_spacing = 1
+ bar_width = 4
+ bar_spacing = 0
 
 
 # Lower and higher cutoff frequencies for lowest and highest bars
@@ -221,11 +221,11 @@
 # a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # default is to keep current terminal color
  background = default
- foreground = '#ff5b5b'
+ foreground = '#17121a'
 
 # SDL and sdl_glsl only support hex code colors, these are the default:
 ; background = '#17121a'
-; foreground = '#f5edb5'
+; foreground = '#17121a'
 
 
 # Gradient mode, only hex defined colors are supported,
@@ -267,7 +267,7 @@
 # Noise reduction, int 0 - 100. default 77
 # the raw visualization is very noisy, this factor adjusts the integral and gravity filters to keep the signal smooth
 # 100 will be very slow and smooth, 0 will be fast but noisy.
- noise_reduction = 0.5
+ noise_reduction = 25
 
 
 [eq]
