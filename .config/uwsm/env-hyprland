@@ -1,5 +1,5 @@
 export HYPRLAND_CONFIG=$HOME/.config/hypr/hyprland.conf
-export HYPRSHOT_DIR=$HOME/Pictures/screenshots/
+export HYPRSHOT_DIR=$HOME/screenshots/
 export HYPRLAND_TRACE=1
 export HYPRLAND_NO_RT=1
 export HYPRLAND_NO_SD_NOTIFY=1
