@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-	background-color: #17121a;
+	background-color: transparent;
 	border-bottom: none;
 }
 
@@ -35,7 +35,7 @@ window#waybar {
 #user,
 #clock {
 	background-color: transparent;
-	color: #f5b5ed;
+	color: #f5edb5;
 	padding: 0 4px;
 	margin: 0 2px;
 	transition: 250ms;
@@ -78,5 +78,5 @@ tooltip {
 	background-color: #17121a;
 	border-color: #7b5b77;
 	border-radius: 0;
-	color: #f5b5ed;
+	color: #f5edb5;
 }
