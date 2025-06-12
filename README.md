@@ -1,1 +1,1 @@
-##My dotfiles for Hyprland.##
+##My dotfiles for Hyprland.
