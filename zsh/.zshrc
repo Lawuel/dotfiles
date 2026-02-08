@@ -15,5 +15,5 @@ compinit
 
 eval "$(starship init zsh)"
 alias ls="ls -a"
-alias grep="ripgrep"
+alias grep="rg"
 alias tree="tree -a"
