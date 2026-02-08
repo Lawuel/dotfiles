@@ -1,0 +1,79 @@
+{
+  "position": "top",
+  "margin-top": 2,
+  "margin-left": 2,
+  "margin-right": 2,
+  "margin-bottom": 0,
+  
+  "modules-left":["hyprland/workspaces"],
+  "modules-center":["backlight", "wireplumber", "clock", "bluetooth", "network"],
+  "modules-right":["temperature", "cpu", "memory"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六"
+
+    }
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span font='16'>{icon}</span>",
+    "format-icons": ["󰃚", "󰃛", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"],
+    "tooltip-format": "{percent}%"
+  },
+
+  "wireplumber": {
+    "format": "<span font='16'>{icon}</span>",
+    "tooltip-format": "{volume}%",
+    "format-muted": "<span font='16' rise='-2000'>󰖁</span>",
+    "format-icons": ["󰕿", "󰖀", "󰕾"]
+  },
+
+  "bluetooth": {
+    "format-on": "<span font='16'></span>",
+    "format-disabled": "<span font='16'>󰂲</span>",
+    "format-connected": "<span font='16'>󰂱</span>",
+    "on-click": "exec blueman-manager"
+  },
+
+  "network": {
+    "format-wifi": "<span font='16'>{icon}</span>",
+    "tooltip-format": "{essid} {bandwidthTotalBytes}",
+    "on-click": "exec alacritty -e nmtui",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "interval": 1
+  },
+
+  "clock": {
+    "timezone": "Asia/Manila",
+    "locale": "en_US.UTF-8",
+    "format": "{:%I:%M %m-%d}",
+    "interval": 60
+  },
+
+  "temperature": {
+    "interval": 1,
+    "format": "{temperatureC}°C",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "cpu": {
+    "interval": 1,
+    "min-length": 3,
+    "format": "{usage}%"
+  },
+
+  "memory": {
+    "interval": 1,
+    "min-length": 7,
+    "format": "{used}GiB"
+  }
+}
+

@@ -1,0 +1,46 @@
+[window]
+opacity = 0.75
+
+[font]
+normal = { family = "DejaVuSansM Nerd Font Mono", style = "Regular" }
+size = 12
+
+[cursor]
+style = { shape = "Underline", blinking  = "On" }
+blink_interval = 250
+
+[colors.primary]
+foreground =  "#E2DFF9"
+dim_foreground ="#716F7C"
+bright_foreground ="#FFFFFF"
+background ="#251F39"
+
+[colors.normal]
+black = "#4B3F73"
+red = "#E23F73"
+green = "#4BDF73"
+yellow  = "#E2DF73"
+blue = "#4B3FF9"
+magenta = "#E23FF9"
+cyan = "#4BDFF9"
+white =   "#E2DFF9"
+
+[colors.bright]
+black = "#715FAD"
+red = "#FF5FAD"
+green = "#71FFAD"
+yellow  = "#FFFFAD"
+blue = "#715FFF"
+magenta = "#FF5FFF"
+cyan = "#71FFFF"
+white = "#FFFFFF"
+
+[colors.dim]
+black = "#251F39"
+red = "#711F39"
+green = "#256F39"
+yellow  = "#716F39"
+blue = "#251F7C"
+magenta = "#711F7C"
+cyan = "#256F7C"
+white = "#716F7C"

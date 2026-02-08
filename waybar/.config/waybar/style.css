@@ -1,0 +1,78 @@
+* {
+  color: rgba(226, 223, 249, 1);
+  font-family: "DeJaVuSansM Nerd Font Mono", "Font Awesome 7", "Font Awesome 7 Free Solid", "Font Awesome 7 Brands Regular", "Font Awesome 7 Free Regular", "Symbols Nerd Font Regular";
+  font-size: 12pt;
+  border: none;
+  border-radius: 0;
+  transition: none;
+  min-height: 0;
+  background: none;
+  padding: 0;
+  text-shadow: none;
+  box-shadow: none;
+  transition: none;
+  -gtk-icon-shadow: none;
+  -gtk-icon-effect: none;
+  min-width: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+.modules-left, 
+.modules-center,
+.modules-right {
+  padding: 0 8px 0 8px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 16px;
+  border-style: dotted;
+  border-width: 4px;
+}
+
+.modules-left {
+  border-color: rgba(226, 63, 115, 1);
+}
+
+.modules-center {
+  border-color: rgba(75, 223, 115, 1);
+}
+
+.modules-right {
+  border-color: rgba(75, 63, 249, 1);
+}
+
+#workspaces button,
+#backlight,
+#wireplumber,
+#clock,
+#bluetooth,
+#network,
+#temperature,
+#cpu,
+#memory {
+  margin: 0 4px 0 4px;
+}
+
+#workspaces button label {
+  color: rgba(226, 63, 115, 1);
+}
+
+#workspaces button.active label {
+  color: rgba(255, 95, 173, 1);
+}
+
+#backlight,
+#wireplumber,
+#clock,
+#bluetooth,
+#network {
+  color: rgba(75, 223, 115, 1);
+}
+
+
+#temperature,
+#cpu,
+#memory {
+  color: rgba(75, 63, 249, 1);
+}
