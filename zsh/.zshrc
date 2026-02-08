@@ -11,5 +11,9 @@ zstyle :compinstall filename '/home/mano/.zshrc'
 autoload -Uz compinit
 compinit
 
-eval "$(starship init zsh)"
 # End of lines added by compinstall
+
+eval "$(starship init zsh)"
+alias ls="ls -a"
+alias grep="ripgrep"
+alias tree="tree -a"
