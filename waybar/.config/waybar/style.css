@@ -42,6 +42,7 @@ window#waybar {
   border-color: rgba(75, 63, 249, 1);
 }
 
+#custom-notifications,
 #workspaces button,
 #backlight,
 #wireplumber,
@@ -62,6 +63,7 @@ window#waybar {
   color: rgba(255, 95, 173, 1);
 }
 
+#custom-notifications,
 #backlight,
 #wireplumber,
 #clock,
