@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-  color: rgba(226, 223, 249, 1);
+  color: @light-bright;
   font-family: "DeJaVuSansM Nerd Font Mono", "Font Awesome 7", "Font Awesome 7 Free Solid", "Font Awesome 7 Brands Regular", "Font Awesome 7 Free Regular", "Symbols Nerd Font Regular";
   font-size: 12pt;
   border: none;
@@ -26,22 +26,22 @@ window#waybar {
 .modules-center,
 .modules-right {
   padding: 0 8px 0 8px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #000;
   border-radius: 16px;
   border-style: dotted;
   border-width: 4px;
 }
 
 .modules-left {
-  border-color: rgba(226, 63, 115, 0.5);
+  border-color: @red-dim;
 }
 
 .modules-center {
-  border-color: rgba(75, 223, 115, 0.5);
+  border-color: @green-dim;
 }
 
 .modules-right {
-  border-color: rgba(75, 63, 249, 0.5);
+  border-color: @blue-dim;
 }
 
 #custom-notifications,
@@ -58,7 +58,7 @@ window#waybar {
 }
 
 #workspaces button label {
-  color: rgba(255, 95, 173, 1);
+  color: @red-bright;
 }
 
 #custom-notifications,
@@ -67,12 +67,12 @@ window#waybar {
 #clock,
 #bluetooth,
 #network {
-  color: rgba(113, 255, 173, 1);
+  color: @green-bright;
 }
 
 
 #temperature,
 #cpu,
 #memory {
-  color: rgba(113, 95, 255, 1);
+  color: @blue-bright;
 }
