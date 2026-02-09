@@ -31,15 +31,15 @@ window#waybar {
 }
 
 .modules-left {
-  border-color: rgba(226, 63, 115, 1);
+  border-color: rgba(226, 63, 115, 0.5);
 }
 
 .modules-center {
-  border-color: rgba(75, 223, 115, 1);
+  border-color: rgba(75, 223, 115, 0.5);
 }
 
 .modules-right {
-  border-color: rgba(75, 63, 249, 1);
+  border-color: rgba(75, 63, 249, 0.5);
 }
 
 #custom-notifications,
@@ -56,10 +56,6 @@ window#waybar {
 }
 
 #workspaces button label {
-  color: rgba(226, 63, 115, 1);
-}
-
-#workspaces button.active label {
   color: rgba(255, 95, 173, 1);
 }
 
@@ -69,12 +65,12 @@ window#waybar {
 #clock,
 #bluetooth,
 #network {
-  color: rgba(75, 223, 115, 1);
+  color: rgba(113, 255, 173, 1);
 }
 
 
 #temperature,
 #cpu,
 #memory {
-  color: rgba(75, 63, 249, 1);
+  color: rgba(113, 95, 255, 1);
 }
