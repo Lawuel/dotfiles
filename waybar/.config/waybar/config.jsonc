@@ -6,7 +6,7 @@
   "margin-bottom": 0,
   
   "modules-left":["hyprland/workspaces"],
-  "modules-center":["backlight", "wireplumber", "clock", "custom/notifications", "bluetooth", "network"],
+  "modules-center":["backlight", "wireplumber", "clock", "custom/notifications", "clock#date", "bluetooth", "network"],
   "modules-right":["temperature", "cpu", "memory"],
 
   "hyprland/workspaces": {
@@ -77,10 +77,17 @@
   "clock": {
     "timezone": "Asia/Manila",
     "locale": "en_US.UTF-8",
-    "format": "{:%I:%M %m-%d}",
+    "format": "{:%I:%M}",
     "interval": 60
   },
 
+  "clock#date": {
+    "timezone": "Asia/Manila",
+    "locale": "en_US.UTF-8",
+    "format": "{:%m-%d}",
+    "interval": 60
+  },
+  
   "temperature": {
     "interval": 1,
     "format": "{temperatureC}°C",
