@@ -1,3 +1,5 @@
+@import "colors.css";
+
 * {
   color: rgba(226, 223, 249, 1);
   font-family: "DeJaVuSansM Nerd Font Mono", "Font Awesome 7", "Font Awesome 7 Free Solid", "Font Awesome 7 Brands Regular", "Font Awesome 7 Free Regular", "Symbols Nerd Font Regular";
