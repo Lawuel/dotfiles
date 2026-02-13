@@ -3,5 +3,5 @@
 format = '$all'
 
 [character]
-success_symbol = '[>](bold green)'
+success_symbol = '[>](#71FFAD)'
 
