@@ -34,13 +34,3 @@ blue = "#715FFF"
 magenta = "#FF5FFF"
 cyan = "#71FFFF"
 white = "#FFFFFF"
-
-[colors.dim]
-black = "#251F39"
-red = "#711F39"
-green = "#256F39"
-yellow  = "#716F39"
-blue = "#251F7C"
-magenta = "#711F7C"
-cyan = "#256F7C"
-white = "#716F7C"
