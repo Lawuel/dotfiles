@@ -3,7 +3,7 @@ opacity = 0.75
 
 [font]
 normal = { family = "DejaVuSansM Nerd Font Mono", style = "Regular" }
-size = 12
+size = 10
 
 [cursor]
 style = { shape = "Underline", blinking  = "On" }
