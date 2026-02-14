@@ -26,22 +26,26 @@ window#waybar {
 .modules-center,
 .modules-right {
   padding: 0 8px 0 8px;
-  background-color: #000;
-  border-radius: 16px;
-  border-style: dotted;
+  border-style: solid;
   border-width: 4px;
+  border-top: none;
 }
 
 .modules-left {
-  border-color: @red-dim;
+  border-color: @red;
+  border-left: none;
+  border-radius: 0 0 16px 0;
 }
 
 .modules-center {
-  border-color: @green-dim;
+  border-color: @green;
+  border-radius: 0 0 16px 16px;
 }
 
 .modules-right {
-  border-color: @blue-dim;
+  border-color: @blue;
+  border-right: none;
+  border-radius: 0 0 0 16px;
 }
 
 #custom-notifications,
