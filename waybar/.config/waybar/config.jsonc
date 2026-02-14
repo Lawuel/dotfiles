@@ -73,7 +73,7 @@
   "network": {
     "format-wifi": "<span font='16'>{icon}</span>",
     "tooltip-format": "{essid} {bandwidthTotalBytes}",
-    "on-click": "exec alacritty -e nmtui",
+    "on-click": "exec kitty nmtui",
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
     "interval": 1
   },
