@@ -6,7 +6,7 @@ normal = { family = "DejaVuSansM Nerd Font Mono", style = "Regular" }
 size = 10
 
 [cursor]
-style = { shape = "Underline", blinking  = "On" }
+style = { shape = "Block", blinking  = "On" }
 blink_interval = 250
 
 [colors.primary]
