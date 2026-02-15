@@ -53,7 +53,6 @@ set autoindent
 set smartindent
 set cursorline
 set cursorlineopt=number
-highlight CursorLineNr cterm=bold gui=bold
 set incsearch
 set ignorecase
 "
